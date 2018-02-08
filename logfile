@@ -1,0 +1,93 @@
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb  8 12:44:08 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb  8 12:44:08 2018] ICE handles watchdog started
+[Thu Feb  8 12:44:08 2018] TURN REST API backend: (disabled)
+[Thu Feb  8 12:44:08 2018] Enabling libnice debugging...
+[Thu Feb  8 12:44:08 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:44:08 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:44:08 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb  8 12:44:08 2018] BUNDLE is NOT going to be forced
+[Thu Feb  8 12:44:08 2018] rtcp-mux is NOT going to be forced
+[Thu Feb  8 12:44:08 2018]   -- RTCP component blackhole socket bound to port 46697
+[Thu Feb  8 12:44:08 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb  8 12:44:08 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb  8 12:44:08 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb  8 12:44:08 2018] Generating DTLS key / cert
+[Thu Feb  8 12:44:11 2018] Fingerprint of our certificate: 59:BA:BC:E2:7B:03:C9:57:6A:35:2E:C1:E6:31:08:A3:D4:F0:C8:EF:FC:C9:FF:8F:5A:19:7E:78:AD:52:56:86
+[Thu Feb  8 12:44:11 2018] Sessions watchdog started
+Stopping gateway, please wait...
+[Thu Feb  8 12:47:46 2018] Ending watchdog mainloop...
+[Thu Feb  8 12:47:46 2018] Closing transport plugins:
+[Thu Feb  8 12:47:46 2018] Destroying sessions...
+[Thu Feb  8 12:47:46 2018] Freeing crypto resources...
+[Thu Feb  8 12:47:46 2018] De-initializing SCTP...
+[Thu Feb  8 12:47:46 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb  8 12:47:46 2018] Closing plugins:
+[Thu Feb  8 12:47:46 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb  8 12:47:59 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb  8 12:47:59 2018] ICE handles watchdog started
+[Thu Feb  8 12:48:00 2018] TURN REST API backend: (disabled)
+[Thu Feb  8 12:48:00 2018] Enabling libnice debugging...
+[Thu Feb  8 12:48:00 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:48:00 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:48:00 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb  8 12:48:00 2018] BUNDLE is NOT going to be forced
+[Thu Feb  8 12:48:00 2018] rtcp-mux is NOT going to be forced
+[Thu Feb  8 12:48:00 2018]   -- RTCP component blackhole socket bound to port 54057
+[Thu Feb  8 12:48:00 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb  8 12:48:00 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb  8 12:48:00 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb  8 12:48:00 2018] Generating DTLS key / cert
+[Thu Feb  8 12:48:01 2018] Fingerprint of our certificate: 5A:BB:A2:57:2F:6D:99:1E:CE:AC:44:04:92:A2:38:A8:7B:87:82:81:40:00:A4:F3:48:54:58:58:A1:41:A0:B6
+[Thu Feb  8 12:48:01 2018] Sessions watchdog started
+Stopping gateway, please wait...
+[Thu Feb  8 12:48:13 2018] Ending watchdog mainloop...
+[Thu Feb  8 12:48:13 2018] Closing transport plugins:
+[Thu Feb  8 12:48:13 2018] Destroying sessions...
+[Thu Feb  8 12:48:13 2018] Freeing crypto resources...
+[Thu Feb  8 12:48:13 2018] De-initializing SCTP...
+[Thu Feb  8 12:48:13 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb  8 12:48:13 2018] Closing plugins:
+[Thu Feb  8 12:48:13 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb  8 12:49:16 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb  8 12:49:16 2018] ICE handles watchdog started
+[Thu Feb  8 12:49:16 2018] TURN REST API backend: (disabled)
+[Thu Feb  8 12:49:16 2018] Enabling libnice debugging...
+[Thu Feb  8 12:49:16 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:49:16 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb  8 12:49:16 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb  8 12:49:16 2018] BUNDLE is NOT going to be forced
+[Thu Feb  8 12:49:16 2018] rtcp-mux is NOT going to be forced
+[Thu Feb  8 12:49:16 2018]   -- RTCP component blackhole socket bound to port 53282
+[Thu Feb  8 12:49:16 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb  8 12:49:16 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb  8 12:49:16 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb  8 12:49:16 2018] Generating DTLS key / cert
+[Thu Feb  8 12:49:19 2018] Fingerprint of our certificate: D0:3E:5D:54:D4:95:4F:5D:D2:76:16:02:DC:EF:60:4C:54:48:C4:D9:4D:E8:C7:58:8C:5F:F7:FA:CB:F7:85:03
+[Thu Feb  8 12:49:19 2018] Sessions watchdog started
+Stopping gateway, please wait...
+[Thu Feb  8 12:49:49 2018] Ending watchdog mainloop...
+[Thu Feb  8 12:49:49 2018] Closing transport plugins:
+[Thu Feb  8 12:49:49 2018] Destroying sessions...
+[Thu Feb  8 12:49:49 2018] Freeing crypto resources...
+[Thu Feb  8 12:49:49 2018] De-initializing SCTP...
+[Thu Feb  8 12:49:49 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb  8 12:49:49 2018] Closing plugins:
+[Thu Feb  8 12:49:49 2018] Closing event handlers:
+Bye!

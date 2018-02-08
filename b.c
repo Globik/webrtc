@@ -354,16 +354,17 @@ janus_session *janus_session_find_destroyed(guint64 session_id) {
 	return session;
 }
 
-/*void janus_session_notify_event(janus_session *session, json_t *event) {
+void janus_session_notify_event(janus_session *session, json_t *event) {
+// ws.send(json event); to browser
 	if(session != NULL && !g_atomic_int_get(&session->destroy) && session->source != NULL && session->source->transport != NULL) {
-		/* Send this to the transport client */
+		// Send this to the transport client 
 		JANUS_LOG(LOG_HUGE, "Sending event to %s (%p)\n", session->source->transport->get_package(), session->source->instance);
 		session->source->transport->send_message(session->source->instance, NULL, FALSE, event);
 	} else {
-		/* No transport, free the event */
+		// No transport, free the event 
 		json_decref(event);
 	}
-} */
+} 
 
 
 /* Destroys a session but does not remove it from the sessions hash table. */
@@ -390,15 +391,13 @@ void janus_session_free(janus_session *session) {
 		session->ice_handles = NULL;
 	}
 	if(session->source != NULL) {
-		janus_request_destroy(session->source);
+		//janus_request_destroy(session->source);
 		session->source = NULL;
 	}
 	janus_mutex_unlock(&session->mutex);
 	g_free(session);
 	session = NULL;
 }
-
-
 /* 
 janus_request *janus_request_new(janus_transport *transport, void *instance, void *request_id, gboolean admin, json_t *message) {
 	janus_request *request = (janus_request *)g_malloc0(sizeof(janus_request));
@@ -423,22 +422,12 @@ void janus_request_destroy(janus_request *request) {
 	g_free(request);
 }
 */
-
-
-
-
-
-
-
 void janus_plugin_close(gpointer key, gpointer value, gpointer user_data) {
 	janus_plugin *plugin = (janus_plugin *)value;
 	if(!plugin)
 		return;
 	plugin->destroy();
 }
-
-
-
 janus_plugin *janus_plugin_find(const gchar *package) {
 	if(package != NULL && plugins != NULL)	/* FIXME Do we need to fix the key pointer? */
 		return g_hash_table_lookup(plugins, package);
@@ -446,8 +435,9 @@ janus_plugin *janus_plugin_find(const gchar *package) {
 }
 
 
-/* Plugin callback interface */
+// Plugin callback interface   from plugin to browser sending json event
 int janus_plugin_push_event(janus_plugin_session *plugin_session, janus_plugin *plugin, const char *transaction, json_t *message, json_t *jsep) {
+	//to browser from plugin
 	if(!plugin || !message)
 		return -1;
 	if(!plugin_session || plugin_session < (janus_plugin_session *)0x1000 ||
@@ -710,26 +700,26 @@ json_t *janus_plugin_handle_sdp(janus_plugin_session *plugin_session, janus_plug
 						ice_handle->audio_stream->video_rtcp_ctx = NULL;
 					}
 				} else if(video) {
-					/* Get rid of data, if present */
-					if(ice_handle->streams && ice_handle->data_stream) {
-						nice_agent_attach_recv(ice_handle->agent, ice_handle->data_stream->stream_id, 1, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
-						nice_agent_remove_stream(ice_handle->agent, ice_handle->data_stream->stream_id);
-						janus_ice_stream_free(ice_handle->streams, ice_handle->data_stream);
-					}
-					ice_handle->data_stream = NULL;
-					ice_handle->data_id = 0;
-				}
-			}
-			if(janus_flags_is_set(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_RTCPMUX) && !ice_handle->force_rtcp_mux && !janus_ice_is_rtcpmux_forced()) {
-				JANUS_LOG(LOG_VERB, "[%"SCNu64"]   -- rtcp-mux is supported by the browser, getting rid of RTCP components, if any...\n", ice_handle->handle_id);
-				if(ice_handle->audio_stream && ice_handle->audio_stream->rtcp_component && ice_handle->audio_stream->components != NULL) {
-					nice_agent_attach_recv(ice_handle->agent, ice_handle->audio_id, 2, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
-					/* Free the component */
-					janus_ice_component_free(ice_handle->audio_stream->components, ice_handle->audio_stream->rtcp_component);
-					ice_handle->audio_stream->rtcp_component = NULL;
-					/* Create a dummy candidate and enforce it as the one to use for this now unneeded component */
-					NiceCandidate *c = nice_candidate_new(NICE_CANDIDATE_TYPE_HOST);
-					c->component_id = 2;
+//Get rid of data, if present 
+if(ice_handle->streams && ice_handle->data_stream) {
+nice_agent_attach_recv(ice_handle->agent, ice_handle->data_stream->stream_id, 1, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
+nice_agent_remove_stream(ice_handle->agent, ice_handle->data_stream->stream_id);
+janus_ice_stream_free(ice_handle->streams, ice_handle->data_stream);
+}
+ice_handle->data_stream = NULL;
+ice_handle->data_id = 0;
+}
+}
+if(janus_flags_is_set(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_RTCPMUX) && !ice_handle->force_rtcp_mux && !janus_ice_is_rtcpmux_forced()) {
+JANUS_LOG(LOG_VERB, "[%"SCNu64"]   -- rtcp-mux is supported by the browser, getting rid of RTCP components, if any...\n", ice_handle->handle_id);
+if(ice_handle->audio_stream && ice_handle->audio_stream->rtcp_component && ice_handle->audio_stream->components != NULL) {
+nice_agent_attach_recv(ice_handle->agent, ice_handle->audio_id, 2, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
+// Free the component 
+janus_ice_component_free(ice_handle->audio_stream->components, ice_handle->audio_stream->rtcp_component);
+ice_handle->audio_stream->rtcp_component = NULL;
+// Create a dummy candidate and enforce it as the one to use for this now unneeded component 
+NiceCandidate *c = nice_candidate_new(NICE_CANDIDATE_TYPE_HOST);
+			c->component_id = 2;
 					c->stream_id = ice_handle->audio_stream->stream_id;
 #ifndef HAVE_LIBNICE_TCP
 					c->transport = NICE_CANDIDATE_TRANSPORT_UDP;
@@ -741,45 +731,48 @@ json_t *janus_plugin_handle_sdp(janus_plugin_session *plugin_session, janus_plug
 					c->username = g_strdup(ice_handle->audio_stream->ruser);
 					c->password = g_strdup(ice_handle->audio_stream->rpass);
 					if(!nice_agent_set_selected_remote_candidate(ice_handle->agent, ice_handle->audio_stream->stream_id, 2, c)) {
-						JANUS_LOG(LOG_ERR, "[%"SCNu64"] Error forcing dummy candidate on RTCP component of stream %d\n", ice_handle->handle_id, ice_handle->audio_stream->stream_id);
+//JANUS_LOG(LOG_ERR, "[%"SCNu64"] Error forcing dummy candidate on RTCP component of stream %d\n",
+		//ice_handle->handle_id, ice_handle->audio_stream->stream_id);
 						nice_candidate_free(c);
 					}
 				}
-				if(ice_handle->video_stream && ice_handle->video_stream->rtcp_component && ice_handle->video_stream->components != NULL) {
-					nice_agent_attach_recv(ice_handle->agent, ice_handle->video_id, 2, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
+if(ice_handle->video_stream && ice_handle->video_stream->rtcp_component && ice_handle->video_stream->components != NULL) {
+nice_agent_attach_recv(ice_handle->agent, ice_handle->video_id, 2, g_main_loop_get_context (ice_handle->iceloop), NULL, NULL);
 					/* Free the component */
-					janus_ice_component_free(ice_handle->video_stream->components, ice_handle->video_stream->rtcp_component);
-					ice_handle->video_stream->rtcp_component = NULL;
+janus_ice_component_free(ice_handle->video_stream->components, ice_handle->video_stream->rtcp_component);
+ice_handle->video_stream->rtcp_component = NULL;
 					/* Create a dummy candidate and enforce it as the one to use for this now unneeded component */
-					NiceCandidate *c = nice_candidate_new(NICE_CANDIDATE_TYPE_HOST);
+NiceCandidate *c = nice_candidate_new(NICE_CANDIDATE_TYPE_HOST);
 					c->component_id = 2;
 					c->stream_id = ice_handle->video_stream->stream_id;
 #ifndef HAVE_LIBNICE_TCP
 					c->transport = NICE_CANDIDATE_TRANSPORT_UDP;
 #endif
-					strncpy(c->foundation, "1", NICE_CANDIDATE_MAX_FOUNDATION);
-					c->priority = 1;
-					nice_address_set_from_string(&c->addr, "127.0.0.1");
-					nice_address_set_port(&c->addr, janus_ice_get_rtcpmux_blackhole_port());
-					c->username = g_strdup(ice_handle->video_stream->ruser);
-					c->password = g_strdup(ice_handle->video_stream->rpass);
-					if(!nice_agent_set_selected_remote_candidate(ice_handle->agent, ice_handle->video_stream->stream_id, 2, c)) {
-						JANUS_LOG(LOG_ERR, "[%"SCNu64"] Error forcing dummy candidate on RTCP component of stream %d\n", ice_handle->handle_id, ice_handle->video_stream->stream_id);
-						nice_candidate_free(c);
-					}
-				}
-			}
-			janus_mutex_lock(&ice_handle->mutex);
+strncpy(c->foundation, "1", NICE_CANDIDATE_MAX_FOUNDATION);
+c->priority = 1;
+nice_address_set_from_string(&c->addr, "127.0.0.1");
+nice_address_set_port(&c->addr, janus_ice_get_rtcpmux_blackhole_port());
+c->username = g_strdup(ice_handle->video_stream->ruser);
+c->password = g_strdup(ice_handle->video_stream->rpass);
+if(!nice_agent_set_selected_remote_candidate(ice_handle->agent, ice_handle->video_stream->stream_id, 2, c)) {
+//JANUS_LOG(LOG_ERR, "[%"SCNu64"] Error forcing dummy candidate on RTCP component of stream %d\n",
+//ice_handle->handle_id, ice_handle->video_stream->stream_id);
+nice_candidate_free(c);
+}
+}
+}
+janus_mutex_lock(&ice_handle->mutex);
 			/* We got our answer */
-			janus_flags_clear(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_PROCESSING_OFFER);
+janus_flags_clear(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_PROCESSING_OFFER);
 			/* Any pending trickles? */
-			if(ice_handle->pending_trickles) {
-				JANUS_LOG(LOG_VERB, "[%"SCNu64"]   -- Processing %d pending trickle candidates\n", ice_handle->handle_id, g_list_length(ice_handle->pending_trickles));
-				GList *temp = NULL;
-				while(ice_handle->pending_trickles) {
-					temp = g_list_first(ice_handle->pending_trickles);
-					ice_handle->pending_trickles = g_list_remove_link(ice_handle->pending_trickles, temp);
-					janus_ice_trickle *trickle = (janus_ice_trickle *)temp->data;
+if(ice_handle->pending_trickles) {
+//JANUS_LOG(LOG_VERB, "[%"SCNu64"]   -- Processing %d pending trickle candidates\n", 
+//		  ice_handle->handle_id, g_list_length(ice_handle->pending_trickles));
+GList *temp = NULL;
+while(ice_handle->pending_trickles) {
+temp = g_list_first(ice_handle->pending_trickles);
+ice_handle->pending_trickles = g_list_remove_link(ice_handle->pending_trickles, temp);
+janus_ice_trickle *trickle = (janus_ice_trickle *)temp->data;
 					g_list_free(temp);
 					if(trickle == NULL)
 						continue;
@@ -835,20 +828,20 @@ json_t *janus_plugin_handle_sdp(janus_plugin_session *plugin_session, janus_plug
 					if(!janus_flags_is_set(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_RTCPMUX))	/* http://tools.ietf.org/html/rfc5761#section-5.1.3 */
 						janus_ice_setup_remote_candidates(ice_handle, ice_handle->video_id, 2);
 				}
-				if(ice_handle->data_id > 0) {
-					janus_ice_setup_remote_candidates(ice_handle, ice_handle->data_id, 1);
-				}
-			}
-			janus_mutex_unlock(&ice_handle->mutex);
-		}
-	}
+if(ice_handle->data_id > 0) {
+janus_ice_setup_remote_candidates(ice_handle, ice_handle->data_id, 1);
+}
+}
+janus_mutex_unlock(&ice_handle->mutex);
+}
+}
 
 	/* Prepare JSON event */
-	json_t *jsep = json_object();
-	json_object_set_new(jsep, "type", json_string(sdp_type));
-	json_object_set_new(jsep, "sdp", json_string(sdp_merged));
-	ice_handle->local_sdp = sdp_merged;
-	return jsep;
+json_t *jsep = json_object();
+json_object_set_new(jsep, "type", json_string(sdp_type));
+json_object_set_new(jsep, "sdp", json_string(sdp_merged));
+ice_handle->local_sdp = sdp_merged;
+return jsep;
 }
 
 void janus_plugin_relay_rtp(janus_plugin_session *plugin_session, int video, char *buf, int len) {
@@ -1219,6 +1212,33 @@ item = janus_config_get_item_drilldown(config, "nat", "ice_tcp");
 #else
 	JANUS_LOG(LOG_WARN, "Data Channels support not compiled\n");
 #endif
+	
+	const char*sdp="v=0\r\n"\
+"o=- 8390502800549818343 2 IN IP4 127.0.0.1\r\n"\
+"s=-\r\n"\
+"t=0 0\r\n"\
+"a=group:BUNDLE data\r\n"\
+"a=msid-semantic: WMS\r\n"\
+"m=application 9 DTLS/SCTP 5000\r\n"\
+"c=IN IP4 0.0.0.0\r\n"\
+"b=AS:30\r\n"\
+"a=ice-ufrag:DnTf\r\n"\
+"a=ice-pwd:NlPxfbTtKe9O4U9iXWyNAZpz\r\n"\
+"a=ice-options:trickle\r\n"\
+"a=fingerprint:sha-256 E2:2E:0E:FA:29:9F:0F:06:D8:21:92:FA:CC:12:1A:A9:EB:F7:64:D9:55:9E:56:76:60:0B:41:A2:0D:4C:07:33\r\n"\
+"a=setup:active\r\n"\
+"a=mid:data\r\n"\
+"a=sctpmap:5000 webrtc-datachannel 1024\r\n";
+char error_str[512];
+	int audio = 0, video = 0, data = 0, bundle = 0, rtcpmux = 0, trickle = 0;
+janus_sdp *parsed_sdp = janus_sdp_preparse(sdp, error_str, sizeof(error_str), &audio, &video, &data, &bundle, &rtcpmux, &trickle);
+	if(parsed_sdp==NULL){printf("err %s\n",error_str);}
+	printf("audio: %d\n",audio);
+	printf("video: %d\n",video);
+	printf("data: %d\n",data);
+	printf("bundle: %d\n",bundle);
+	printf("rtcpmux: %d\n",rtcpmux);
+	printf("trickle: %d\n",trickle);
 
 	/* Sessions */
 	sessions = g_hash_table_new_full(g_int64_hash, g_int64_equal, (GDestroyNotify)g_free, NULL);
@@ -1257,13 +1277,17 @@ gchar **disabled_plugins = NULL;
 	json_object_set_new(repl,"type",json_string("offer"));
 	json_object_set_new(repl,"janus",json_string("janus"));
 	json_object_set_new(repl,"jsep",json_string("58"));
-	janus_process_incoming_request2(repl);
+	//janus_process_incoming_request2(repl);
 	json_decref(repl);
 	/*
 	"transaction", JSON_STRING, JANUS_JSON_PARAM_REQUIRED},
 	{"janus", JSON_STRING, JANUS_JSON_PARAM_REQUIRED},
 	{"id"
 	*/
+	
+	
+	
+	
 	
 	
 	
@@ -1313,7 +1337,7 @@ gchar **disabled_plugins = NULL;
 		g_hash_table_foreach(transports_so, janus_transportso_close, NULL);
 		g_hash_table_destroy(transports_so);
 	}
-	g_thread_pool_free(tasks, FALSE, FALSE);
+	//g_thread_pool_free(tasks, FALSE, FALSE);
 
 	JANUS_LOG(LOG_INFO, "Destroying sessions...\n");
 	g_clear_pointer(&sessions, g_hash_table_destroy);
