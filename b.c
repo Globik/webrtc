@@ -1213,7 +1213,7 @@ item = janus_config_get_item_drilldown(config, "nat", "ice_tcp");
 	JANUS_LOG(LOG_WARN, "Data Channels support not compiled\n");
 #endif
 	
-	const char*sdp="v=0\r\n"\
+const char*sdp="v=0\r\n"\
 "o=- 8390502800549818343 2 IN IP4 127.0.0.1\r\n"\
 "s=-\r\n"\
 "t=0 0\r\n"\
