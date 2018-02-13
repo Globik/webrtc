@@ -92,7 +92,7 @@ gboolean janus_log_timestamps = FALSE;
 gboolean janus_log_colors = FALSE;
 int lock_debug = 0;
 
-
+//janus_log_level=7;
 /*! \brief Signal handler (just used to intercept CTRL+C and SIGTERM) */
 static void janus_handle_signal(int signum) {
 	stop_signal = signum;
@@ -353,7 +353,7 @@ janus_session *janus_session_find_destroyed(guint64 session_id) {
 	janus_mutex_unlock(&sessions_mutex);
 	return session;
 }
-
+// uhuhuhuhu
 void janus_session_notify_event(janus_session *session, json_t *event) {
 // ws.send(json event); to browser
 	if(session != NULL && !g_atomic_int_get(&session->destroy) && session->source != NULL && session->source->transport != NULL) {
@@ -914,6 +914,15 @@ void janus_plugin_end_session(janus_plugin_session *plugin_session) {
 	janus_mutex_unlock(&session->mutex);
 }
 
+
+void janus_pluginso_close(gpointer key, gpointer value, gpointer user_data) {
+	void *plugin = value;
+	if(!plugin)
+		return;
+	/* FIXME We don't dlclose plugins to be sure we can detect leaks */
+	//~ dlclose(plugin);
+}
+
 void janus_plugin_notify_event(janus_plugin *plugin, janus_plugin_session *plugin_session, json_t *event) {
 
 	if(!plugin || !event || !json_is_object(event))
@@ -946,10 +955,12 @@ void janus_plugin_notify_event(janus_plugin *plugin, janus_plugin_session *plugi
 	}
 }
 
+//int janus_log_level=5;
 
 /* Main */
 gint main(int argc, char *argv[])
 {
+	janus_log_level=7;
 	/* Core dumps may be disallowed by parent of this process; change that */
 	struct rlimit core_limits;
 	core_limits.rlim_cur = core_limits.rlim_max = RLIM_INFINITY;
@@ -979,10 +990,11 @@ gint main(int argc, char *argv[])
 	g_type_init();
 #endif
 
-	g_print(" Logging level: default is info and no timestamps \n");
-	janus_log_level = 7;//LOG_INFO;
+	g_print(" Logging lejijivel: default is info and no timestamps \n");
+	//janus_log_level = 7;//LOG_INFO;
 	janus_log_timestamps = TRUE;
 	janus_log_colors = TRUE;
+	//janus_log_level=7;
 	if(args_info.debug_level_given) {
 		if(args_info.debug_level_arg < LOG_NONE)
 			args_info.debug_level_arg = 0;
@@ -1213,7 +1225,11 @@ item = janus_config_get_item_drilldown(config, "nat", "ice_tcp");
 	JANUS_LOG(LOG_WARN, "Data Channels support not compiled\n");
 #endif
 	
-const char*sdp="v=0\r\n"\
+	
+	
+	
+	
+const char*sdpu="v=0\r\n"\
 "o=- 8390502800549818343 2 IN IP4 127.0.0.1\r\n"\
 "s=-\r\n"\
 "t=0 0\r\n"\
@@ -1229,6 +1245,7 @@ const char*sdp="v=0\r\n"\
 "a=setup:active\r\n"\
 "a=mid:data\r\n"\
 "a=sctpmap:5000 webrtc-datachannel 1024\r\n";
+	/*
 char error_str[512];
 	int audio = 0, video = 0, data = 0, bundle = 0, rtcpmux = 0, trickle = 0;
 janus_sdp *parsed_sdp = janus_sdp_preparse(sdp, error_str, sizeof(error_str), &audio, &video, &data, &bundle, &rtcpmux, &trickle);
@@ -1239,6 +1256,7 @@ janus_sdp *parsed_sdp = janus_sdp_preparse(sdp, error_str, sizeof(error_str), &a
 	printf("bundle: %d\n",bundle);
 	printf("rtcpmux: %d\n",rtcpmux);
 	printf("trickle: %d\n",trickle);
+	*/
 
 	/* Sessions */
 	sessions = g_hash_table_new_full(g_int64_hash, g_int64_equal, (GDestroyNotify)g_free, NULL);
@@ -1265,6 +1283,155 @@ gchar **disabled_plugins = NULL;
 	disabled_plugins = NULL;
 
 
+	const char *path=NULL;
+	DIR *dir=NULL;
+	
+	/* Load plugins */
+//	path = PLUGINDIR;
+	printf("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssiiiiiiiiiiii\n");
+	
+	//path="/usr/local/lib/janus/plugins";
+	//path="/home/globik/webrtc/plugins";
+	path="/home/globik/webrtc";
+	JANUS_LOG(LOG_WARN,"NEW FUCKER\n");
+	item = janus_config_get_item_drilldown(config, "general", "plugins_folder");
+	if(item && item->value)
+		path = (char *)item->value;
+	JANUS_LOG(LOG_INFO, "Plugins folder: %s\n", path);
+	dir = opendir(path);
+	if(!dir) {
+		JANUS_LOG(LOG_FATAL, "\tCouldn't access plugins folder...\n");
+		exit(1);
+	}
+	/* Any plugin to ignore? */
+	//gchar **disabled_plugins = NULL;
+	item = janus_config_get_item_drilldown(config, "plugins", "disable");
+	if(item && item->value)
+		disabled_plugins = g_strsplit(item->value, ",", -1);
+	/* Open the shared objects */
+	//struct dirent *pluginent = NULL;
+	char pluginpath[1024];
+	while((pluginent = readdir(dir))) {
+		int len = strlen(pluginent->d_name);
+		if (len < 4) {
+			continue;
+		}
+		if (strcasecmp(pluginent->d_name+len-strlen(SHLIB_EXT), SHLIB_EXT)) {
+			continue;
+		}
+		/* Check if this plugins has been disabled in the configuration file */
+	/*	if(disabled_plugins != NULL) {
+			gchar *index = disabled_plugins[0];
+			if(index != NULL) {
+				int i=0;
+				gboolean skip = FALSE;
+				while(index != NULL) {
+					while(isspace(*index))
+						index++;
+					if(strlen(index) && !strcmp(index, pluginent->d_name)) {
+						JANUS_LOG(LOG_WARN, "Plugin '%s' has been disabled, skipping...\n", pluginent->d_name);
+						skip = TRUE;
+						break;
+					}
+					i++;
+					index = disabled_plugins[i];
+				}
+				if(skip)
+					continue;
+			}
+		} */
+		JANUS_LOG(LOG_WARN,"LOADING PLUGIN %s\n",pluginent->d_name);
+		JANUS_LOG(LOG_INFO, "Loading plugin '%s'...\n", pluginent->d_name);
+		memset(pluginpath, 0, 1024);
+		g_snprintf(pluginpath, 1024, "%s/%s", path, pluginent->d_name);
+		void *plugin = dlopen(pluginpath, RTLD_NOW | RTLD_GLOBAL);
+		if (!plugin) {
+			JANUS_LOG(LOG_ERR, "\tCouldn't load plugin '%s': %s\n", pluginent->d_name, dlerror());
+		} else {
+			create_p *create = (create_p*) dlsym(plugin, "create");
+			const char *dlsym_error = dlerror();
+			if (dlsym_error) {
+				JANUS_LOG(LOG_ERR, "\tCouldn't load symbol 'create': %s\n", dlsym_error);
+				continue;
+			}
+			janus_plugin *janus_plugin = create();
+			if(!janus_plugin) {
+				JANUS_LOG(LOG_ERR, "\tCouldn't use function 'create'...\n");
+				continue;
+			}
+			/* Are all the mandatory methods and callbacks implemented? */
+			if(!janus_plugin->init || !janus_plugin->destroy ||
+					!janus_plugin->get_api_compatibility ||
+					!janus_plugin->get_version ||
+					!janus_plugin->get_version_string ||
+					!janus_plugin->get_description ||
+					!janus_plugin->get_package ||
+					!janus_plugin->get_name ||
+					!janus_plugin->create_session ||
+					!janus_plugin->query_session ||
+					!janus_plugin->destroy_session ||
+					!janus_plugin->handle_message ||
+					!janus_plugin->setup_media ||
+					!janus_plugin->hangup_media) {
+				JANUS_LOG(LOG_ERR, "\tMissing some mandatory methods/callbacks, skipping this plugin...\n");
+				continue;
+			}
+			if(janus_plugin->get_api_compatibility() < JANUS_PLUGIN_API_VERSION) {
+				JANUS_LOG(LOG_ERR, "The '%s' plugin was compiled against an older version of the API (%d < %d), skipping it: update it to enable it again\n",
+					janus_plugin->get_package(), janus_plugin->get_api_compatibility(), JANUS_PLUGIN_API_VERSION);
+				continue;
+			}
+			//const char*pupkin="/home/globik/janus-gateway/conf/janus.plugin.echotest.cfg.sample";
+			//char * pupkin="fu";
+			//configs_folder="conf";
+		///	printf("CONFIG_PATH: %s\n",configs_folder);zzz
+			if(janus_plugin->init(&janus_handler_plugin, configs_folder) < 0) {
+				JANUS_LOG(LOG_WARN, "The '%s' plugin could not be initialized\n", janus_plugin->get_package());
+				dlclose(plugin);
+				continue;
+			}
+			//JANUS_LOG(LOG_WARN,"NEW FUCKER\n");
+			//printf("VERSION!!!!!!!!!!!!!!!!!!!!! %s\n",janus_plugin->get_package());
+			JANUS_LOG(LOG_WARN, "\tVersion: %d (%s)\n", janus_plugin->get_version(), janus_plugin->get_version_string());
+			JANUS_LOG(LOG_WARN, "\t   [%s] %s\n", janus_plugin->get_package(), janus_plugin->get_name());
+			JANUS_LOG(LOG_WARN, "\t   %s\n", janus_plugin->get_description());
+			JANUS_LOG(LOG_WARN, "\t   Plugin API version: %d\n", janus_plugin->get_api_compatibility());
+			if(!janus_plugin->incoming_rtp && !janus_plugin->incoming_rtcp && !janus_plugin->incoming_data) {
+				JANUS_LOG(LOG_WARN, "The '%s' plugin doesn't implement any callback for RTP/RTCP/data... is this on purpose?\n",
+					janus_plugin->get_package());
+			}
+			if(!janus_plugin->incoming_rtp && !janus_plugin->incoming_rtcp && janus_plugin->incoming_data) {
+				JANUS_LOG(LOG_WARN, "The '%s' plugin will only handle data channels (no RTP/RTCP)... is this on purpose?\n",
+					janus_plugin->get_package());
+			}
+			if(plugins == NULL)
+				plugins = g_hash_table_new(g_str_hash, g_str_equal);
+			g_hash_table_insert(plugins, (gpointer)janus_plugin->get_package(), janus_plugin);
+			if(plugins_so == NULL)
+				plugins_so = g_hash_table_new(g_str_hash, g_str_equal);
+			g_hash_table_insert(plugins_so, (gpointer)janus_plugin->get_package(), plugin);
+		}
+	}
+	closedir(dir);
+	
+	
+
+	
+	if(disabled_plugins != NULL)
+		g_strfreev(disabled_plugins);
+	disabled_plugins = NULL;
+
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
 
 
 	gboolean janus_api_enabled = FALSE, admin_api_enabled = FALSE;
@@ -1355,13 +1522,15 @@ gchar **disabled_plugins = NULL;
 
 	JANUS_LOG(LOG_INFO, "Closing plugins:\n");
 	if(plugins != NULL) {
+		JANUS_LOG(LOG_INFO, "PLUGINS:\n");
 		g_hash_table_foreach(plugins, janus_plugin_close, NULL);
 		g_hash_table_destroy(plugins);
-	}
+	}else{JANUS_LOG(LOG_INFO, "Closing plugins: PLUGINS IS NULL\n");}
 	if(plugins_so != NULL) {
+		JANUS_LOG(LOG_INFO, "PLUGINS_SO:\n");
 		g_hash_table_foreach(plugins_so, janus_pluginso_close, NULL);
 		g_hash_table_destroy(plugins_so);
-	}
+	}else{JANUS_LOG(LOG_INFO, "Closing plugins: PLUGINS_SO IS NULL\n");}
 
 	JANUS_LOG(LOG_INFO, "Closing event handlers:\n");
 	janus_events_deinit();
