@@ -957,7 +957,7 @@ void janus_plugin_notify_event(janus_plugin *plugin, janus_plugin_session *plugi
 
 //int janus_log_level=5;
 
-/* Main */
+/* Main jijijijij*/
 gint main(int argc, char *argv[])
 {
 	janus_log_level=7;

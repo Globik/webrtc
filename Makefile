@@ -16,14 +16,14 @@ SU3=$(PAA)/janus-version.o events.o ice.o log.o b.o dtls.o
 
 EVENT=-L /usr/local/lib/janus/events -ljanus_sampleevh
 b: b.c
-	gcc $(INCLS) $(CFLAGS) -o b b.c  $(OBJ) $(SUKA) `pkg-config --libs glib-2.0 nice openssl` 
+	gcc $(INCLS) $(CFLAGS) -rdynamic -o b b.c  $(OBJ) $(SUKA) `pkg-config --libs glib-2.0 nice openssl` 
 
 s: b.c
 	gcc $(INCLS) $(CFLAGS) -c -fpic b.c 
 
 j: j
-	gcc $(INCLS) $(CFLAGS) -c -fpic  b.c ./plugins/janus_echotest.c 
-	#$(SUKA3)
+	gcc $(INCLS) $(CFLAGS) -c -fpic ./plugins/janus_echotest.c 
+	
 v: v
-	gcc -shared -DDEBUG -DLOG_INFO=7 -o libjanus_echtest.so janus_echotest.o   $(SU2) -ljansson $(EVENT) \
+	gcc -shared -DDEBUG -DLOG_INFO=7 -o libjanus_echtest.so janus_echotest.o -ljansson $(EVENT) \
 	`pkg-config --libs glib-2.0  nice openssl` -lsrtp2 -lusrsctp -lm -pthread -ldl -lcrypto -lssl
