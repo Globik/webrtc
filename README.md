@@ -8,6 +8,7 @@ A standalone dedicated WebRTC gateway server is cool, but a standalone WebRTC li
 
 # Lorenzo's janus_process_incoming_request() in pseudocode
 
+```
 workflow:
 raw:
 1. if no sessions and handle_id, then just create them
@@ -64,15 +65,18 @@ lock(&handle->mutex);
 if(!janus_flags_is_set(&handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_TRICKLE)) {
 janus_flags_set(&handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_TRICKLE);
 }
-if(handle->audio_stream == NULL && handle->video_stream == NULL && handle->data_stream == NULL) {
-janus_ice_trickle *early_trickle = janus_ice_trickle_new(handle, transaction_text, candidate ? candidate : candidates);
+if(handle->audio_stream == NULL && 
+handle->video_stream == NULL && handle->data_stream == NULL) {
+janus_ice_trickle *early_trickle = janus_ice_trickle_new(handle,
+transaction_text, candidate ? candidate : candidates);
 handle->pending_trickles = g_list_append(handle->pending_trickles, early_trickle);
 goto trickledone;
 }
 if(janus_flags_is_set(&handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_PROCESSING_OFFER) ||
 !janus_flags_is_set(&handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_GOT_OFFER) ||
 !janus_flags_is_set(&handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_GOT_ANSWER)) {
-janus_ice_trickle *early_trickle = janus_ice_trickle_new(handle, transaction_text, candidate ? candidate : candidates);
+janus_ice_trickle *early_trickle = janus_ice_trickle_new(handle,
+transaction_text, candidate ? candidate : candidates);
 handle->pending_trickles = g_list_append(handle->pending_trickles, early_trickle);
 goto trickledone;
 }
@@ -83,7 +87,7 @@ if(error = janus_ice_trickle_parse(handle, candidate, &error_string))
 }
 if(json_array_size(candidates) > 0) {
 size_t i = 0;
-``` for(i=0; i<json_array_size(candidates); i++) { ```
+for(i=0; i<json_array_size(candidates); i++) { 
 json_t *c = json_array_get(candidates, i);
 janus_ice_trickle_parse(handle, c, NULL);
 }
@@ -116,7 +120,8 @@ goto jsondone;
 	
 if(jsep != NULL) {
 if(!json_is_object(jsep)) {
-//ret = janus_process_error(request, session_id, transaction_text, JANUS_ERROR_INVALID_JSON_OBJECT, "Invalid jsep object");
+//ret = janus_process_error(request, session_id, 
+//transaction_text, JANUS_ERROR_INVALID_JSON_OBJECT, "Invalid jsep object");
 goto jsondone;
 }
 
@@ -582,3 +587,5 @@ goto jsondone;
 }
 janus_plugin_result_destroy(result);
 }
+
+```
