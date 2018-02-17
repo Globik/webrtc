@@ -428,6 +428,7 @@ void janus_plugin_close(gpointer key, gpointer value, gpointer user_data) {
 		return;
 	plugin->destroy();
 }
+
 janus_plugin *janus_plugin_find(const gchar *package) {
 	if(package != NULL && plugins != NULL)	/* FIXME Do we need to fix the key pointer? */
 		return g_hash_table_lookup(plugins, package);
@@ -436,7 +437,11 @@ janus_plugin *janus_plugin_find(const gchar *package) {
 
 
 // Plugin callback interface   from plugin to browser sending json event
-int janus_plugin_push_event(janus_plugin_session *plugin_session, janus_plugin *plugin, const char *transaction, json_t *message, json_t *jsep) {
+int janus_plugin_push_event(janus_plugin_session *plugin_session,
+							janus_plugin *plugin,
+							const char *transaction,
+							json_t *message, 
+							json_t *jsep) {
 	//to browser from plugin
 	if(!plugin || !message)
 		return -1;
@@ -1412,6 +1417,7 @@ gchar **disabled_plugins = NULL;
 			g_hash_table_insert(plugins_so, (gpointer)janus_plugin->get_package(), plugin);
 		}
 	}
+	
 	closedir(dir);
 	
 	

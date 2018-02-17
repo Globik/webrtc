@@ -1,46 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h> // usleep
+#include <dlfcn.h>
+#include <dirent.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <sys/resource.h>
+#include <sys/stat.h>
+#include <signal.h>
 #include <glib.h>
 #include "plugin.h"
+#define SHLIB_EXT ".so"
 
 
 static GMainContext *sess_watchdog_ctx=NULL;
-j_plugin *plugin_create(void);
-int plugin_init(j_cbs*cb);
-void plugin_destroy(void);
-struct j_plugin_res *plugin_handle_message(char*transaction);
 
-j_plugin_res*j_plugin_res_new(j_plugin_res_type type,const char*text){
-j_plugin_res *result=g_malloc(sizeof(j_plugin_res));
-	result->type=type;
-	result->text=text;
-	return result;
-}
-void j_plugin_res_destroy(j_plugin_res *result){
-result->text=NULL;
-	g_free(result);
-	g_print("j_plugin_res_destroy\n");
-}
+/*
+j_plugin *plugin_create(void);//p
+int plugin_init(j_cbs*cb);//p
+void plugin_destroy(void);//p
+struct j_plugin_res *plugin_handle_message(char*transaction);//p
+
 
 static j_plugin p_m=J_PLUGIN_INIT(
 		.init=plugin_init,
 		.destroy=plugin_destroy,
 		.handle_message=plugin_handle_message,
-		);
+		);//p
 j_plugin *plugin_create(void){
 printf("Created!\n");
 return &p_m;
-}
-static volatile gint initialized=0,stopping=0;
-static j_cbs *gw=NULL;
-static GThread *handler_thread;
-static void *plugin_handler(void*data);
+}//p
+static volatile gint initialized=0,stopping=0;//p
+static j_cbs *gw=NULL;//p
+static GThread *handler_thread;//p
+static void *plugin_handler(void*data);//p
 typedef struct j_message{
 char*transaction;
-} j_message;
-static GAsyncQueue *messages=NULL;
-static j_message exit_message;
+} j_message;//p
+static GAsyncQueue *messages=NULL;//p
+static j_message exit_message;//p
 
 
 static void plugin_message_free(j_message *msg){
@@ -67,7 +67,7 @@ messages=g_async_queue_new_full((GDestroyNotify)plugin_message_free);
 	}
 	printf("Initialized!\n");
 return 0;
-}
+}//p
 
 void plugin_destroy(void){
 if(!g_atomic_int_get(&initialized)) return;
@@ -82,7 +82,7 @@ if(!g_atomic_int_get(&initialized)) return;
 	g_atomic_int_set(&initialized,0);
 	g_atomic_int_set(&stopping,0);
 	printf("Destroyd\n");
-}
+}//p
 
 struct j_plugin_res *plugin_handle_message(char*transaction){
 if(g_atomic_int_get(&stopping) || !g_atomic_int_get(&initialized))
@@ -91,7 +91,7 @@ if(g_atomic_int_get(&stopping) || !g_atomic_int_get(&initialized))
 	msg->transaction=transaction;
 	g_async_queue_push(messages,msg);
 	return j_plugin_res_new(J_PLUGIN_OK_WAIT,"i'm taking my time");
-}
+}//p
 static void*plugin_handler(void*data){
 j_message *msg=NULL;
 	while(g_atomic_int_get(&initialized) && !g_atomic_int_get(&stopping)){
@@ -109,9 +109,16 @@ j_message *msg=NULL;
 	
 	g_print("leaving thread from PLUGIN_HANDLER\n");
 	return NULL;
-}
+}//p
+
+
+*/
+
+
+
 
 int j_plugin_push_event(j_plugin*plugin,const char*transaction);
+static gboolean j_check_sess(gpointer);
 
 static j_cbs j_handler_plugin={
 .push_event=j_plugin_push_event,
@@ -163,27 +170,12 @@ GMainLoop *loop=(GMainLoop *)user_data;
 
 static void j_termination_handler(void) {}
 int main(){
+	j_plugin *janus_plugin =NULL;
 	signal(SIGINT, j_handle_signal);
 	signal(SIGTERM, j_handle_signal);
 	atexit(j_termination_handler);
 
 	g_print(" Setup Glib \n");
-	
-	j_plugin *plugin=plugin_create();
-	if(!plugin){g_print("create plugin failer\n");exit(1);}
-	if(plugin->init(&j_handler_plugin) < 0){
-	g_print("no plugin init\n");
-		exit(1);
-	}
-	j_plugin_res *resu=plugin->handle_message("dudka");
-	if(resu==NULL){g_print("resu is null\n");}
-	if(resu->type==J_PLUGIN_OK){g_print("j_plugin_ok\n");}
-	if(resu->type==J_PLUGIN_OK_WAIT){g_print("J_PLUGIN_OK_WAIT: %s\n",resu->text);}
-	
-	int res=gw->push_event(plugin,"Fucker");
-	printf("res of gw->push_event(fucker): %d\n",res);
-	
-	j_plugin_res_destroy(resu);
 	
 	sess_watchdog_ctx=g_main_context_new();
 	GMainLoop *watchdog_loop=g_main_loop_new(sess_watchdog_ctx,FALSE);
@@ -193,18 +185,114 @@ int main(){
 	printf("fatal err trying to start sess watchdog\n");
 	exit(1);
 	}
+	
+	struct dirent *pluginent = NULL;
+	const char *path=NULL;
+	DIR *dir=NULL;
+	path="/home/globik/webrtc/thread1/plugin";
+	
+	g_print("Plugins folder: %s\n", path);
+	dir = opendir(path);
+	if(!dir) {
+		g_print("\tCouldn't access plugins folder...\n");
+		exit(1);
+	}
+	
+	char pluginpath[1024];
+	while((pluginent = readdir(dir))) {
+		int len = strlen(pluginent->d_name);
+		if (len < 4) {
+			continue;
+		}
+		if (strcasecmp(pluginent->d_name+len-strlen(SHLIB_EXT), SHLIB_EXT)) {
+			continue;
+		}
+		
+		g_print("LOADING PLUGIN %s\n",pluginent->d_name);
+		
+		memset(pluginpath, 0, 1024);
+		g_snprintf(pluginpath, 1024, "%s/%s", path, pluginent->d_name);
+		void *plugin = dlopen(pluginpath, RTLD_NOW | RTLD_GLOBAL);
+		if (!plugin) {
+			g_print("\tCouldn't load plugin '%s': %s\n", pluginent->d_name, dlerror());
+		} else {
+			create_p *create = (create_p*) dlsym(plugin, "plugin_create");
+			const char *dlsym_error = dlerror();
+			if (dlsym_error) {
+				g_print( "\tCouldn't load symbol 'plugin_create': %s\n", dlsym_error);
+				continue;
+			}
+			
+			//j_plugin *
+				janus_plugin = create();
+			if(!janus_plugin) {
+				g_print("\tCouldn't use function 'plugin_create'...\n");
+				continue;
+			}
+			/* Are all the mandatory methods and callbacks implemented? */
+			if(!janus_plugin->init || !janus_plugin->destroy ||!janus_plugin->handle_message ) {
+				g_print("\tMissing some mandatory methods/callbacks, skipping this plugin...\n");
+				continue;
+			}
+		
+			if(janus_plugin->init(&j_handler_plugin) < 0) {
+				g_print( "The  plugin could not be initialized\n");
+				dlclose(plugin);
+				continue;
+			}
+			/*
+			if(plugins == NULL)
+				plugins = g_hash_table_new(g_str_hash, g_str_equal);
+			g_hash_table_insert(plugins, (gpointer)janus_plugin->get_package(), janus_plugin);
+			if(plugins_so == NULL)
+				plugins_so = g_hash_table_new(g_str_hash, g_str_equal);
+			g_hash_table_insert(plugins_so, (gpointer)janus_plugin->get_package(), plugin);
+			*/
+		}
+	}
+	
+	
+	closedir(dir);
+	
+	
+	
+	
+	
+	
+	// PLUGIN!!!!!!!!!!!!!!
+	if(janus_plugin !=NULL) {
+		/*
+	j_plugin *plugin=plugin_create();
+	if(!plugin){g_print("create plugin failer\n");exit(1);}
+	if(plugin->init(&j_handler_plugin) < 0){
+	g_print("no plugin init\n");
+		exit(1);
+	}
+	*/
+	j_plugin_res *resu=janus_plugin->handle_message("dudka_DUDKA");
+	if(resu==NULL){g_print("resu is null\n");}
+	if(resu->type==J_PLUGIN_OK){g_print("j_plugin_ok\n");}
+	if(resu->type==J_PLUGIN_OK_WAIT){g_print("J_PLUGIN_OK_WAIT: %s\n",resu->text);}
+	
+	//int res=gw->push_event(plugin,"Fucker");
+	//printf("res of gw->push_event(fucker): %d\n",res);
+	
+	j_plugin_res_destroy(resu);
+	}
+	
 	while(!g_atomic_int_get(&stop)){
 	usleep(250000);
 	}
 	
 	
-	printf("ending watchdog loop\n");
+	g_print("ending watchdog loop\n");
 	g_main_loop_quit(watchdog_loop);
 	g_thread_join(watchdog);
 	watchdog=NULL;
 	g_main_loop_unref(watchdog_loop);
 	g_main_context_unref(sess_watchdog_ctx);
 	sess_watchdog_ctx=NULL;
-	plugin->destroy();
+	if(janus_plugin !=NULL) janus_plugin->destroy();
+	g_print("Bye!\n");
 	exit(0);
 }

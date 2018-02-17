@@ -1,0 +1,1 @@
+trying to bind dlsym create_plugin() width gmain_loop
