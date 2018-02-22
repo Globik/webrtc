@@ -2416,3 +2416,2020 @@ Stopping gateway, please wait...
 [Wed Feb 14 01:52:23 2018] PLUGINS_SO:
 [Wed Feb 14 01:52:23 2018] Closing event handlers:
 Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 06:43:15 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 06:43:15 2018] ICE handles watchdog started
+[Thu Feb 22 06:43:15 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 06:43:15 2018] Enabling libnice debugging...
+[Thu Feb 22 06:43:15 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 06:43:15 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 06:43:15 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 06:43:15 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 06:43:15 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 06:43:15 2018]   -- RTCP component blackhole socket bound to port 40123
+[Thu Feb 22 06:43:15 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 06:43:15 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 06:43:15 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 06:43:15 2018] Generating DTLS key / cert
+[Thu Feb 22 06:43:18 2018] Fingerprint of our certificate: EA:52:91:3F:D7:FC:6F:EE:CD:09:13:5D:15:D3:E5:B5:CE:A6:F9:E9:18:E4:BD:C9:EC:45:46:3B:C8:3C:DB:CF
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 06:43:18 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 06:43:18 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 06:43:18 2018] Sessions watchdog started
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 06:43:18 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 06:43:27 2018] Ending watchdog mainloop...
+[Thu Feb 22 06:43:27 2018] Closing transport plugins:
+[Thu Feb 22 06:43:27 2018] Destroying sessions...
+[Thu Feb 22 06:43:27 2018] Freeing crypto resources...
+[Thu Feb 22 06:43:27 2018] De-initializing SCTP...
+[Thu Feb 22 06:43:27 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 06:43:27 2018] Closing plugins:
+[Thu Feb 22 06:43:27 2018] PLUGINS:
+[Thu Feb 22 06:43:27 2018] PLUGINS_SO:
+[Thu Feb 22 06:43:27 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 07:18:57 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 07:18:57 2018] ICE handles watchdog started
+[Thu Feb 22 07:18:57 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 07:18:57 2018] Enabling libnice debugging...
+[Thu Feb 22 07:18:57 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 07:18:57 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 07:18:57 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 07:18:57 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 07:18:57 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 07:18:57 2018]   -- RTCP component blackhole socket bound to port 39284
+[Thu Feb 22 07:18:57 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 07:18:57 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 07:18:57 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 07:18:57 2018] Generating DTLS key / cert
+[Thu Feb 22 07:18:59 2018] Fingerprint of our certificate: 07:FC:DC:86:72:58:88:C9:08:5C:A1:C5:DB:61:63:92:84:28:5A:33:E8:A8:3D:67:5E:40:24:25:E5:82:78:48
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 07:18:59 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 07:18:59 2018] Sessions watchdog started
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 07:18:59 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 07:18:59 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 07:19:05 2018] Ending watchdog mainloop...
+[Thu Feb 22 07:19:05 2018] Closing transport plugins:
+[Thu Feb 22 07:19:05 2018] Destroying sessions...
+[Thu Feb 22 07:19:05 2018] Freeing crypto resources...
+[Thu Feb 22 07:19:05 2018] De-initializing SCTP...
+[Thu Feb 22 07:19:05 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 07:19:05 2018] Closing plugins:
+[Thu Feb 22 07:19:05 2018] PLUGINS:
+[Thu Feb 22 07:19:05 2018] PLUGINS_SO:
+[Thu Feb 22 07:19:05 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 08:49:30 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 08:49:30 2018] ICE handles watchdog started
+[Thu Feb 22 08:49:30 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 08:49:30 2018] Enabling libnice debugging...
+[Thu Feb 22 08:49:30 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:49:30 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:49:30 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 08:49:30 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 08:49:30 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 08:49:30 2018]   -- RTCP component blackhole socket bound to port 41967
+[Thu Feb 22 08:49:30 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 08:49:30 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 08:49:30 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 08:49:30 2018] Generating DTLS key / cert
+[Thu Feb 22 08:49:32 2018] Fingerprint of our certificate: CC:38:CE:1F:79:D7:97:AD:E2:9D:6C:B4:AC:06:2D:95:77:68:AE:EC:36:1C:D5:41:0A:C9:2B:7A:24:94:20:95
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 08:49:32 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 08:49:32 2018] Sessions watchdog started
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 08:49:32 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 08:49:32 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 08:49:35 2018] Ending watchdog mainloop...
+[Thu Feb 22 08:49:35 2018] Closing transport plugins:
+[Thu Feb 22 08:49:35 2018] Destroying sessions...
+[Thu Feb 22 08:49:35 2018] Freeing crypto resources...
+[Thu Feb 22 08:49:35 2018] De-initializing SCTP...
+[Thu Feb 22 08:49:35 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 08:49:35 2018] Closing plugins:
+[Thu Feb 22 08:49:35 2018] PLUGINS:
+[Thu Feb 22 08:49:35 2018] PLUGINS_SO:
+[Thu Feb 22 08:49:35 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 08:52:27 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 08:52:27 2018] ICE handles watchdog started
+[Thu Feb 22 08:52:27 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 08:52:27 2018] Enabling libnice debugging...
+[Thu Feb 22 08:52:27 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:52:27 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:52:27 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 08:52:27 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 08:52:27 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 08:52:27 2018]   -- RTCP component blackhole socket bound to port 46242
+[Thu Feb 22 08:52:27 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 08:52:27 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 08:52:27 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 08:52:27 2018] Generating DTLS key / cert
+[Thu Feb 22 08:52:30 2018] Fingerprint of our certificate: B8:7E:2F:7B:CF:12:6D:79:58:27:13:6E:05:EF:1D:3E:19:3C:62:8A:05:A6:EF:43:3E:26:81:1B:EE:CB:60:04
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 08:52:30 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 08:52:30 2018] Sessions watchdog started
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 08:52:30 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 08:52:30 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 08:52:43 2018] Ending watchdog mainloop...
+[Thu Feb 22 08:52:43 2018] Closing transport plugins:
+[Thu Feb 22 08:52:43 2018] Destroying sessions...
+[Thu Feb 22 08:52:43 2018] Freeing crypto resources...
+[Thu Feb 22 08:52:43 2018] De-initializing SCTP...
+[Thu Feb 22 08:52:43 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 08:52:43 2018] Closing plugins:
+[Thu Feb 22 08:52:43 2018] PLUGINS:
+[Thu Feb 22 08:52:43 2018] PLUGINS_SO:
+[Thu Feb 22 08:52:43 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 08:57:51 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 08:57:51 2018] ICE handles watchdog started
+[Thu Feb 22 08:57:51 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 08:57:51 2018] Enabling libnice debugging...
+[Thu Feb 22 08:57:51 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:57:51 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 08:57:51 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 08:57:51 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 08:57:51 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 08:57:51 2018]   -- RTCP component blackhole socket bound to port 55443
+[Thu Feb 22 08:57:51 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 08:57:51 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 08:57:51 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 08:57:51 2018] Generating DTLS key / cert
+[Thu Feb 22 08:57:53 2018] Fingerprint of our certificate: F7:45:89:7E:66:5A:09:B2:DF:14:0D:C5:93:11:7C:31:D3:2A:D8:B0:9F:DE:5A:35:F1:1B:F8:0C:02:95:15:3D
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 08:57:53 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 08:57:53 2018] Sessions watchdog started
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 08:57:53 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 08:57:53 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 08:57:58 2018] Ending watchdog mainloop...
+[Thu Feb 22 08:57:58 2018] Closing transport plugins:
+[Thu Feb 22 08:57:58 2018] Destroying sessions...
+[Thu Feb 22 08:57:58 2018] Freeing crypto resources...
+[Thu Feb 22 08:57:58 2018] De-initializing SCTP...
+[Thu Feb 22 08:57:58 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 08:57:58 2018] Closing plugins:
+[Thu Feb 22 08:57:58 2018] PLUGINS:
+[Thu Feb 22 08:57:58 2018] PLUGINS_SO:
+[Thu Feb 22 08:57:58 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 09:06:15 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 09:06:15 2018] ICE handles watchdog started
+[Thu Feb 22 09:06:15 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 09:06:15 2018] Enabling libnice debugging...
+[Thu Feb 22 09:06:15 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:06:15 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:06:15 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 09:06:15 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 09:06:15 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 09:06:15 2018]   -- RTCP component blackhole socket bound to port 41983
+[Thu Feb 22 09:06:15 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 09:06:15 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 09:06:15 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 09:06:15 2018] Generating DTLS key / cert
+[Thu Feb 22 09:06:16 2018] Fingerprint of our certificate: 57:9B:F0:12:57:AE:97:08:BD:BD:56:A1:19:D3:A3:DD:BF:A4:E9:2F:68:3A:1E:7E:B0:45:3F:68:AF:02:C3:2A
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 09:06:16 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 09:06:16 2018] Sessions watchdog started
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 09:06:16 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 09:06:16 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 09:06:31 2018] Ending watchdog mainloop...
+[Thu Feb 22 09:06:31 2018] Closing transport plugins:
+[Thu Feb 22 09:06:31 2018] Destroying sessions...
+[Thu Feb 22 09:06:31 2018] Freeing crypto resources...
+[Thu Feb 22 09:06:31 2018] De-initializing SCTP...
+[Thu Feb 22 09:06:31 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 09:06:31 2018] Closing plugins:
+[Thu Feb 22 09:06:31 2018] PLUGINS:
+[Thu Feb 22 09:06:31 2018] PLUGINS_SO:
+[Thu Feb 22 09:06:31 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 09:07:55 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 09:07:55 2018] ICE handles watchdog started
+[Thu Feb 22 09:07:55 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 09:07:55 2018] Enabling libnice debugging...
+[Thu Feb 22 09:07:55 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:07:55 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:07:55 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 09:07:55 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 09:07:55 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 09:07:55 2018]   -- RTCP component blackhole socket bound to port 56898
+[Thu Feb 22 09:07:55 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 09:07:55 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 09:07:55 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 09:07:55 2018] Generating DTLS key / cert
+[Thu Feb 22 09:07:57 2018] Fingerprint of our certificate: 17:50:58:99:23:CD:4D:79:75:F1:E8:47:B1:C5:38:38:72:CB:D1:A6:9C:FC:84:CE:39:99:E8:3C:02:9C:A3:74
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 09:07:57 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 09:07:57 2018] Sessions watchdog started
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 09:07:57 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 09:07:57 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 09:08:04 2018] Ending watchdog mainloop...
+[Thu Feb 22 09:08:04 2018] Closing transport plugins:
+[Thu Feb 22 09:08:04 2018] Destroying sessions...
+[Thu Feb 22 09:08:04 2018] Freeing crypto resources...
+[Thu Feb 22 09:08:04 2018] De-initializing SCTP...
+[Thu Feb 22 09:08:04 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 09:08:04 2018] Closing plugins:
+[Thu Feb 22 09:08:04 2018] PLUGINS:
+[Thu Feb 22 09:08:04 2018] PLUGINS_SO:
+[Thu Feb 22 09:08:04 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 09:13:00 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 09:13:00 2018] ICE handles watchdog started
+[Thu Feb 22 09:13:00 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 09:13:00 2018] Enabling libnice debugging...
+[Thu Feb 22 09:13:00 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:13:00 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:13:00 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 09:13:00 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 09:13:00 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 09:13:00 2018]   -- RTCP component blackhole socket bound to port 43139
+[Thu Feb 22 09:13:00 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 09:13:00 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 09:13:00 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 09:13:00 2018] Generating DTLS key / cert
+[Thu Feb 22 09:13:02 2018] Fingerprint of our certificate: 53:E1:02:A0:48:41:84:02:3E:9B:21:EF:34:49:83:F3:69:1F:B9:A4:2D:6D:76:76:F5:0E:42:68:9D:D3:D2:F9
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 09:13:02 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 09:13:02 2018] Sessions watchdog started
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 09:13:02 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 09:13:02 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 09:13:22 2018] Ending watchdog mainloop...
+[Thu Feb 22 09:13:22 2018] Closing transport plugins:
+[Thu Feb 22 09:13:22 2018] Destroying sessions...
+[Thu Feb 22 09:13:22 2018] Freeing crypto resources...
+[Thu Feb 22 09:13:22 2018] De-initializing SCTP...
+[Thu Feb 22 09:13:22 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 09:13:22 2018] Closing plugins:
+[Thu Feb 22 09:13:22 2018] PLUGINS:
+[Thu Feb 22 09:13:23 2018] PLUGINS_SO:
+[Thu Feb 22 09:13:23 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 09:17:57 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 09:17:57 2018] ICE handles watchdog started
+[Thu Feb 22 09:17:57 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 09:17:57 2018] Enabling libnice debugging...
+[Thu Feb 22 09:17:57 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:17:57 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:17:57 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 09:17:57 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 09:17:57 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 09:17:57 2018]   -- RTCP component blackhole socket bound to port 50596
+[Thu Feb 22 09:17:57 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 09:17:57 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 09:17:57 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 09:17:57 2018] Generating DTLS key / cert
+[Thu Feb 22 09:18:00 2018] Fingerprint of our certificate: FD:D0:2E:71:85:6F:62:15:07:B7:99:27:98:B9:1C:FC:E2:CF:B6:64:6F:A6:06:15:61:59:E5:35:93:A7:19:FB
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 09:18:00 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 09:18:00 2018] Sessions watchdog started
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 09:18:00 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 09:18:00 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 09:18:05 2018] Ending watchdog mainloop...
+[Thu Feb 22 09:18:05 2018] Closing transport plugins:
+[Thu Feb 22 09:18:05 2018] Destroying sessions...
+[Thu Feb 22 09:18:05 2018] Freeing crypto resources...
+[Thu Feb 22 09:18:05 2018] De-initializing SCTP...
+[Thu Feb 22 09:18:05 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 09:18:05 2018] Closing plugins:
+[Thu Feb 22 09:18:05 2018] PLUGINS:
+[Thu Feb 22 09:18:06 2018] PLUGINS_SO:
+[Thu Feb 22 09:18:06 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 09:21:45 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 09:21:45 2018] ICE handles watchdog started
+[Thu Feb 22 09:21:45 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 09:21:45 2018] Enabling libnice debugging...
+[Thu Feb 22 09:21:45 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:21:45 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 09:21:45 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 09:21:45 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 09:21:45 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 09:21:45 2018]   -- RTCP component blackhole socket bound to port 56100
+[Thu Feb 22 09:21:45 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 09:21:45 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 09:21:45 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 09:21:45 2018] Generating DTLS key / cert
+[Thu Feb 22 09:21:46 2018] Fingerprint of our certificate: 30:DE:40:90:3A:43:32:11:0A:8F:53:32:3B:07:DB:67:00:EA:09:4B:48:01:23:8F:29:12:68:D6:F5:6A:4E:2D
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 09:21:46 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 09:21:46 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 09:21:46 2018] Sessions watchdog started
+[Thu Feb 22 09:21:46 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 09:21:57 2018] Ending watchdog mainloop...
+[Thu Feb 22 09:21:57 2018] Closing transport plugins:
+[Thu Feb 22 09:21:57 2018] Destroying sessions...
+[Thu Feb 22 09:21:57 2018] Freeing crypto resources...
+[Thu Feb 22 09:21:57 2018] De-initializing SCTP...
+[Thu Feb 22 09:21:57 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 09:21:57 2018] Closing plugins:
+[Thu Feb 22 09:21:57 2018] PLUGINS:
+[Thu Feb 22 09:21:57 2018] PLUGINS_SO:
+[Thu Feb 22 09:21:57 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:07:46 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:07:46 2018] ICE handles watchdog started
+[Thu Feb 22 11:07:46 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:07:46 2018] Enabling libnice debugging...
+[Thu Feb 22 11:07:46 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:07:46 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:07:46 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:07:46 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:07:46 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:07:46 2018]   -- RTCP component blackhole socket bound to port 50451
+[Thu Feb 22 11:07:46 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:07:46 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:07:46 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:07:46 2018] Generating DTLS key / cert
+[Thu Feb 22 11:07:50 2018] Fingerprint of our certificate: 0E:8E:7E:06:16:89:1C:08:09:FB:17:45:1A:7C:23:9A:75:8E:50:9A:89:46:40:53:76:67:EF:4E:A6:E3:24:C2
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:07:50 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:07:50 2018] Sessions watchdog started
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:07:50 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:07:50 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:08:51 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:08:51 2018] Closing transport plugins:
+[Thu Feb 22 11:08:51 2018] Destroying sessions...
+[Thu Feb 22 11:08:51 2018] Freeing crypto resources...
+[Thu Feb 22 11:08:51 2018] De-initializing SCTP...
+[Thu Feb 22 11:08:51 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:08:51 2018] Closing plugins:
+[Thu Feb 22 11:08:51 2018] PLUGINS:
+[Thu Feb 22 11:08:52 2018] PLUGINS_SO:
+[Thu Feb 22 11:08:52 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:18:06 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:18:06 2018] ICE handles watchdog started
+[Thu Feb 22 11:18:06 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:18:06 2018] Enabling libnice debugging...
+[Thu Feb 22 11:18:06 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:18:06 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:18:06 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:18:06 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:18:06 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:18:06 2018]   -- RTCP component blackhole socket bound to port 35203
+[Thu Feb 22 11:18:06 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:18:06 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:18:06 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:18:06 2018] Generating DTLS key / cert
+[Thu Feb 22 11:18:08 2018] Fingerprint of our certificate: FC:11:37:75:75:40:5E:25:B3:81:D5:7D:4C:7F:5A:02:0A:03:2C:75:B5:0E:E3:5B:2F:89:01:9A:8C:A6:09:C2
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:18:08 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:18:08 2018] Sessions watchdog started
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:18:08 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:18:08 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:18:14 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:18:14 2018] Closing transport plugins:
+[Thu Feb 22 11:18:14 2018] Destroying sessions...
+[Thu Feb 22 11:18:14 2018] Freeing crypto resources...
+[Thu Feb 22 11:18:14 2018] De-initializing SCTP...
+[Thu Feb 22 11:18:14 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:18:14 2018] Closing plugins:
+[Thu Feb 22 11:18:14 2018] PLUGINS:
+[Thu Feb 22 11:18:15 2018] PLUGINS_SO:
+[Thu Feb 22 11:18:15 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:20:32 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:20:32 2018] ICE handles watchdog started
+[Thu Feb 22 11:20:32 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:20:32 2018] Enabling libnice debugging...
+[Thu Feb 22 11:20:32 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:20:32 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:20:32 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:20:32 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:20:32 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:20:32 2018]   -- RTCP component blackhole socket bound to port 49117
+[Thu Feb 22 11:20:32 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:20:32 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:20:32 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:20:32 2018] Generating DTLS key / cert
+[Thu Feb 22 11:20:33 2018] Fingerprint of our certificate: 27:50:CF:08:A1:CC:EC:7B:18:03:46:74:4B:23:15:AF:28:69:E5:E7:FA:A4:FB:C2:01:AC:93:88:47:43:67:0F
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:20:33 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:20:33 2018] Sessions watchdog started
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:20:33 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:20:33 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:20:35 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:20:35 2018] Closing transport plugins:
+[Thu Feb 22 11:20:35 2018] Destroying sessions...
+[Thu Feb 22 11:20:35 2018] Freeing crypto resources...
+[Thu Feb 22 11:20:35 2018] De-initializing SCTP...
+[Thu Feb 22 11:20:35 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:20:35 2018] Closing plugins:
+[Thu Feb 22 11:20:35 2018] PLUGINS:
+[Thu Feb 22 11:20:35 2018] PLUGINS_SO:
+[Thu Feb 22 11:20:35 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:22:29 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:22:29 2018] ICE handles watchdog started
+[Thu Feb 22 11:22:29 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:22:29 2018] Enabling libnice debugging...
+[Thu Feb 22 11:22:29 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:22:29 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:22:29 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:22:29 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:22:29 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:22:29 2018]   -- RTCP component blackhole socket bound to port 39654
+[Thu Feb 22 11:22:29 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:22:29 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:22:29 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:22:29 2018] Generating DTLS key / cert
+[Thu Feb 22 11:22:30 2018] Fingerprint of our certificate: 68:90:F0:EA:43:0F:8E:E2:F5:02:62:59:9A:D6:69:74:AF:1D:9F:97:9B:ED:E1:AE:EF:85:E8:03:4C:8E:17:FE
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:22:30 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:22:30 2018] Sessions watchdog started
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:22:30 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:22:30 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:22:32 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:22:32 2018] Closing transport plugins:
+[Thu Feb 22 11:22:32 2018] Destroying sessions...
+[Thu Feb 22 11:22:32 2018] Freeing crypto resources...
+[Thu Feb 22 11:22:32 2018] De-initializing SCTP...
+[Thu Feb 22 11:22:32 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:22:32 2018] Closing plugins:
+[Thu Feb 22 11:22:32 2018] PLUGINS:
+[Thu Feb 22 11:22:33 2018] PLUGINS_SO:
+[Thu Feb 22 11:22:33 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:29:13 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:29:13 2018] ICE handles watchdog started
+[Thu Feb 22 11:29:13 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:29:13 2018] Enabling libnice debugging...
+[Thu Feb 22 11:29:13 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:29:13 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:29:13 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:29:13 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:29:13 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:29:13 2018]   -- RTCP component blackhole socket bound to port 34691
+[Thu Feb 22 11:29:13 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:29:13 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:29:13 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:29:13 2018] Generating DTLS key / cert
+[Thu Feb 22 11:29:14 2018] Fingerprint of our certificate: 8B:C0:83:84:55:27:12:44:BA:90:C7:37:0A:5F:D0:E6:8F:20:30:4E:F9:A9:7B:DF:09:94:01:DD:3C:67:B2:4A
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:29:14 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:29:14 2018] Sessions watchdog started
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:29:14 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:29:14 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:29:15 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:29:15 2018] Closing transport plugins:
+[Thu Feb 22 11:29:15 2018] Destroying sessions...
+[Thu Feb 22 11:29:15 2018] Freeing crypto resources...
+[Thu Feb 22 11:29:15 2018] De-initializing SCTP...
+[Thu Feb 22 11:29:15 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:29:15 2018] Closing plugins:
+[Thu Feb 22 11:29:15 2018] PLUGINS:
+[Thu Feb 22 11:29:15 2018] PLUGINS_SO:
+[Thu Feb 22 11:29:15 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:33:55 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:33:55 2018] ICE handles watchdog started
+[Thu Feb 22 11:33:55 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:33:55 2018] Enabling libnice debugging...
+[Thu Feb 22 11:33:55 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:33:55 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:33:55 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:33:55 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:33:55 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:33:55 2018]   -- RTCP component blackhole socket bound to port 60443
+[Thu Feb 22 11:33:55 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:33:55 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:33:55 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:33:55 2018] Generating DTLS key / cert
+[Thu Feb 22 11:34:00 2018] Fingerprint of our certificate: 61:84:A1:DE:ED:B3:1A:FD:54:BA:F4:04:7D:01:DF:3F:59:08:4F:1A:2B:48:E8:C1:3C:7C:11:FA:BC:F1:1F:D6
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:34:00 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:34:00 2018] Sessions watchdog started
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:34:00 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:34:00 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:34:05 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:34:05 2018] Closing transport plugins:
+[Thu Feb 22 11:34:05 2018] Destroying sessions...
+[Thu Feb 22 11:34:05 2018] Freeing crypto resources...
+[Thu Feb 22 11:34:05 2018] De-initializing SCTP...
+[Thu Feb 22 11:34:05 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:34:05 2018] Closing plugins:
+[Thu Feb 22 11:34:05 2018] PLUGINS:
+[Thu Feb 22 11:34:06 2018] PLUGINS_SO:
+[Thu Feb 22 11:34:06 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:37:09 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:37:09 2018] ICE handles watchdog started
+[Thu Feb 22 11:37:09 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:37:09 2018] Enabling libnice debugging...
+[Thu Feb 22 11:37:09 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:37:09 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:37:09 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:37:09 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:37:09 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:37:09 2018]   -- RTCP component blackhole socket bound to port 53306
+[Thu Feb 22 11:37:09 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:37:09 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:37:09 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:37:09 2018] Generating DTLS key / cert
+[Thu Feb 22 11:37:10 2018] Fingerprint of our certificate: F5:EA:31:F4:3E:17:DA:B2:D6:AB:72:31:99:F3:15:6C:04:D4:8C:64:DB:2A:A0:47:F6:85:DC:88:54:25:99:76
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:37:10 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:37:10 2018] Sessions watchdog started
+[Thu Feb 22 11:37:10 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:37:10 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:37:15 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:37:15 2018] Closing transport plugins:
+[Thu Feb 22 11:37:15 2018] Destroying sessions...
+[Thu Feb 22 11:37:15 2018] Freeing crypto resources...
+[Thu Feb 22 11:37:15 2018] De-initializing SCTP...
+[Thu Feb 22 11:37:15 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:37:15 2018] Closing plugins:
+[Thu Feb 22 11:37:15 2018] PLUGINS:
+[Thu Feb 22 11:37:16 2018] PLUGINS_SO:
+[Thu Feb 22 11:37:16 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:39:33 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:39:33 2018] ICE handles watchdog started
+[Thu Feb 22 11:39:33 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:39:33 2018] Enabling libnice debugging...
+[Thu Feb 22 11:39:33 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:39:33 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:39:33 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:39:33 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:39:33 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:39:33 2018]   -- RTCP component blackhole socket bound to port 44826
+[Thu Feb 22 11:39:33 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:39:33 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:39:33 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:39:33 2018] Generating DTLS key / cert
+[Thu Feb 22 11:39:34 2018] Fingerprint of our certificate: 97:3F:04:93:42:26:9E:30:E4:78:96:D9:45:00:2A:45:BE:78:A9:32:05:BF:35:E3:A2:4F:27:5B:27:C5:60:CA
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:39:34 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:39:34 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:39:34 2018] Sessions watchdog started
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:39:34 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:39:35 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:39:35 2018] Closing transport plugins:
+[Thu Feb 22 11:39:35 2018] Destroying sessions...
+[Thu Feb 22 11:39:35 2018] Freeing crypto resources...
+[Thu Feb 22 11:39:35 2018] De-initializing SCTP...
+[Thu Feb 22 11:39:35 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:39:35 2018] Closing plugins:
+[Thu Feb 22 11:39:35 2018] PLUGINS:
+[Thu Feb 22 11:39:36 2018] PLUGINS_SO:
+[Thu Feb 22 11:39:36 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:41:29 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:41:29 2018] ICE handles watchdog started
+[Thu Feb 22 11:41:30 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:41:30 2018] Enabling libnice debugging...
+[Thu Feb 22 11:41:30 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:41:30 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:41:30 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:41:30 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:41:30 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:41:30 2018]   -- RTCP component blackhole socket bound to port 57081
+[Thu Feb 22 11:41:30 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:41:30 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:41:30 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:41:30 2018] Generating DTLS key / cert
+[Thu Feb 22 11:41:34 2018] Fingerprint of our certificate: 47:5D:8E:8D:6B:CD:ED:56:15:E0:80:80:92:41:3B:0C:EB:FA:AD:B5:BE:90:2D:F9:16:A5:22:2E:41:8D:4A:4B
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:41:34 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:41:34 2018] Sessions watchdog started
+[Thu Feb 22 11:41:34 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:41:34 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:41:35 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:41:35 2018] Closing transport plugins:
+[Thu Feb 22 11:41:35 2018] Destroying sessions...
+[Thu Feb 22 11:41:35 2018] Freeing crypto resources...
+[Thu Feb 22 11:41:35 2018] De-initializing SCTP...
+[Thu Feb 22 11:41:35 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:41:35 2018] Closing plugins:
+[Thu Feb 22 11:41:35 2018] PLUGINS:
+[Thu Feb 22 11:41:35 2018] PLUGINS_SO:
+[Thu Feb 22 11:41:35 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:44:41 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:44:41 2018] ICE handles watchdog started
+[Thu Feb 22 11:44:41 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:44:41 2018] Enabling libnice debugging...
+[Thu Feb 22 11:44:41 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:44:41 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:44:41 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:44:41 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:44:41 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:44:41 2018]   -- RTCP component blackhole socket bound to port 37915
+[Thu Feb 22 11:44:41 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:44:41 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:44:41 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:44:41 2018] Generating DTLS key / cert
+[Thu Feb 22 11:44:45 2018] Fingerprint of our certificate: 95:B2:3D:ED:65:C6:D7:C4:6A:B7:5D:32:44:0E:DF:38:6B:87:74:F5:7B:C4:5A:83:3D:02:B1:5D:0C:1C:09:5D
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:44:45 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:44:45 2018] Sessions watchdog started
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:44:45 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:44:45 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:44:54 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:44:54 2018] Closing transport plugins:
+[Thu Feb 22 11:44:54 2018] Destroying sessions...
+[Thu Feb 22 11:44:54 2018] Freeing crypto resources...
+[Thu Feb 22 11:44:54 2018] De-initializing SCTP...
+[Thu Feb 22 11:44:54 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:44:54 2018] Closing plugins:
+[Thu Feb 22 11:44:54 2018] PLUGINS:
+[Thu Feb 22 11:44:54 2018] PLUGINS_SO:
+[Thu Feb 22 11:44:54 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:45:46 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:45:46 2018] ICE handles watchdog started
+[Thu Feb 22 11:45:46 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:45:46 2018] Enabling libnice debugging...
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:45:46 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:45:46 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:45:46 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:45:46 2018]   -- RTCP component blackhole socket bound to port 35995
+[Thu Feb 22 11:45:46 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:45:46 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:45:46 2018] Generating DTLS key / cert
+[Thu Feb 22 11:45:46 2018] Fingerprint of our certificate: 0E:76:F9:F9:A5:A2:83:66:44:55:B5:F5:5B:E4:EF:17:F4:D5:F0:6A:15:94:0F:3C:DB:90:0A:CB:D7:E6:5A:AE
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:45:46 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:45:46 2018] Sessions watchdog started
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:45:46 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:45:46 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:45:48 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:45:48 2018] Closing transport plugins:
+[Thu Feb 22 11:45:48 2018] Destroying sessions...
+[Thu Feb 22 11:45:48 2018] Freeing crypto resources...
+[Thu Feb 22 11:45:48 2018] De-initializing SCTP...
+[Thu Feb 22 11:45:48 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:45:48 2018] Closing plugins:
+[Thu Feb 22 11:45:48 2018] PLUGINS:
+[Thu Feb 22 11:45:48 2018] PLUGINS_SO:
+[Thu Feb 22 11:45:48 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 11:54:30 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 11:54:30 2018] ICE handles watchdog started
+[Thu Feb 22 11:54:30 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 11:54:30 2018] Enabling libnice debugging...
+[Thu Feb 22 11:54:30 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:54:30 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 11:54:30 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 11:54:30 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 11:54:30 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 11:54:30 2018]   -- RTCP component blackhole socket bound to port 49715
+[Thu Feb 22 11:54:30 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 11:54:30 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 11:54:30 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 11:54:30 2018] Generating DTLS key / cert
+[Thu Feb 22 11:54:34 2018] Fingerprint of our certificate: C4:63:7B:DC:01:09:BC:1D:1F:FA:83:87:58:50:4C:DF:D5:FE:C6:31:E5:A1:59:1F:9F:94:B8:B9:97:3E:C0:45
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 11:54:34 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 11:54:34 2018] Sessions watchdog started
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 11:54:34 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 11:54:34 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 11:54:40 2018] Ending watchdog mainloop...
+[Thu Feb 22 11:54:40 2018] Closing transport plugins:
+[Thu Feb 22 11:54:40 2018] Destroying sessions...
+[Thu Feb 22 11:54:40 2018] Freeing crypto resources...
+[Thu Feb 22 11:54:40 2018] De-initializing SCTP...
+[Thu Feb 22 11:54:40 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 11:54:40 2018] Closing plugins:
+[Thu Feb 22 11:54:40 2018] PLUGINS:
+[Thu Feb 22 11:54:40 2018] PLUGINS_SO:
+[Thu Feb 22 11:54:40 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 12:03:36 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 12:03:36 2018] ICE handles watchdog started
+[Thu Feb 22 12:03:36 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 12:03:36 2018] Enabling libnice debugging...
+[Thu Feb 22 12:03:36 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 12:03:36 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 12:03:36 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 12:03:36 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 12:03:36 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 12:03:36 2018]   -- RTCP component blackhole socket bound to port 34021
+[Thu Feb 22 12:03:36 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 12:03:36 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 12:03:36 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 12:03:36 2018] Generating DTLS key / cert
+[Thu Feb 22 12:03:38 2018] Fingerprint of our certificate: D6:10:FC:2C:AA:17:71:5D:F2:89:16:59:27:B7:E1:4E:A0:56:CD:75:B2:FA:08:29:45:C5:41:BA:40:60:BC:B3
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 12:03:38 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 12:03:38 2018] Sessions watchdog started
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 12:03:38 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 12:03:38 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 12:03:46 2018] Ending watchdog mainloop...
+[Thu Feb 22 12:03:46 2018] Closing transport plugins:
+[Thu Feb 22 12:03:46 2018] Destroying sessions...
+[Thu Feb 22 12:03:46 2018] Freeing crypto resources...
+[Thu Feb 22 12:03:46 2018] De-initializing SCTP...
+[Thu Feb 22 12:03:46 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 12:03:46 2018] Closing plugins:
+[Thu Feb 22 12:03:46 2018] PLUGINS:
+[Thu Feb 22 12:03:46 2018] PLUGINS_SO:
+[Thu Feb 22 12:03:46 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 12:16:00 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 12:16:00 2018] ICE handles watchdog started
+[Thu Feb 22 12:16:00 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 12:16:00 2018] Enabling libnice debugging...
+[Thu Feb 22 12:16:00 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 12:16:00 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 12:16:00 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 12:16:00 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 12:16:00 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 12:16:00 2018]   -- RTCP component blackhole socket bound to port 39237
+[Thu Feb 22 12:16:00 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 12:16:00 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 12:16:00 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 12:16:00 2018] Generating DTLS key / cert
+[Thu Feb 22 12:16:06 2018] Fingerprint of our certificate: 8D:72:65:5B:FC:00:69:36:14:DA:BE:6C:53:9B:96:69:66:DA:F3:F6:F5:57:B9:B0:7B:8B:55:30:23:38:5A:07
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 12:16:06 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 12:16:06 2018] Sessions watchdog started
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 12:16:06 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 12:16:06 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 12:16:09 2018] Ending watchdog mainloop...
+[Thu Feb 22 12:16:09 2018] Closing transport plugins:
+[Thu Feb 22 12:16:09 2018] Destroying sessions...
+[Thu Feb 22 12:16:09 2018] Freeing crypto resources...
+[Thu Feb 22 12:16:09 2018] De-initializing SCTP...
+[Thu Feb 22 12:16:09 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 12:16:09 2018] Closing plugins:
+[Thu Feb 22 12:16:09 2018] PLUGINS:
+[Thu Feb 22 12:16:09 2018] PLUGINS_SO:
+[Thu Feb 22 12:16:09 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:06:42 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:06:42 2018] ICE handles watchdog started
+[Thu Feb 22 13:06:42 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:06:42 2018] Enabling libnice debugging...
+[Thu Feb 22 13:06:42 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:06:42 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:06:42 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:06:42 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:06:42 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:06:42 2018]   -- RTCP component blackhole socket bound to port 44568
+[Thu Feb 22 13:06:42 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:06:42 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:06:42 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:06:42 2018] Generating DTLS key / cert
+[Thu Feb 22 13:06:43 2018] Fingerprint of our certificate: 86:89:60:0F:CD:FB:1D:BD:E6:04:5A:C9:5E:B1:82:B4:29:07:BA:8E:33:0E:FC:92:F5:A5:16:31:A8:78:C7:52
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:06:43 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:06:43 2018] Sessions watchdog started
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:06:43 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:06:43 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:07:01 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:07:01 2018] Closing transport plugins:
+[Thu Feb 22 13:07:01 2018] Destroying sessions...
+[Thu Feb 22 13:07:01 2018] Freeing crypto resources...
+[Thu Feb 22 13:07:01 2018] De-initializing SCTP...
+[Thu Feb 22 13:07:01 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:07:01 2018] Closing plugins:
+[Thu Feb 22 13:07:01 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:07:01 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:07:01 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:10:38 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:10:38 2018] ICE handles watchdog started
+[Thu Feb 22 13:10:38 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:10:38 2018] Enabling libnice debugging...
+[Thu Feb 22 13:10:38 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:10:38 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:10:38 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:10:38 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:10:38 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:10:38 2018]   -- RTCP component blackhole socket bound to port 55306
+[Thu Feb 22 13:10:38 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:10:38 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:10:38 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:10:38 2018] Generating DTLS key / cert
+[Thu Feb 22 13:10:41 2018] Fingerprint of our certificate: 5B:1D:43:C7:40:91:6F:46:98:5F:87:78:A6:07:27:3A:14:0C:A2:65:C5:E8:EB:C6:5A:9D:22:04:56:EA:40:C1
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:10:41 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:10:41 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:10:41 2018] Sessions watchdog started
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:10:41 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:10:47 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:10:47 2018] Closing transport plugins:
+[Thu Feb 22 13:10:47 2018] Destroying sessions...
+[Thu Feb 22 13:10:47 2018] Freeing crypto resources...
+[Thu Feb 22 13:10:47 2018] De-initializing SCTP...
+[Thu Feb 22 13:10:47 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:10:47 2018] Closing plugins:
+[Thu Feb 22 13:10:47 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:10:47 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:10:47 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:15:46 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:15:46 2018] ICE handles watchdog started
+[Thu Feb 22 13:15:46 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:15:46 2018] Enabling libnice debugging...
+[Thu Feb 22 13:15:46 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:15:46 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:15:46 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:15:46 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:15:46 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:15:46 2018]   -- RTCP component blackhole socket bound to port 41630
+[Thu Feb 22 13:15:46 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:15:46 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:15:46 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:15:46 2018] Generating DTLS key / cert
+[Thu Feb 22 13:15:49 2018] Fingerprint of our certificate: A9:1E:C1:26:64:99:13:0E:56:0D:3C:FC:D8:22:32:95:BE:FE:D0:CB:FB:9F:45:97:A7:EC:D5:06:9D:98:69:B3
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:15:49 2018] Sessions watchdog started
+[Thu Feb 22 13:15:49 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:15:49 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:15:49 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:15:55 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:15:55 2018] Closing transport plugins:
+[Thu Feb 22 13:15:55 2018] Destroying sessions...
+[Thu Feb 22 13:15:55 2018] Freeing crypto resources...
+[Thu Feb 22 13:15:55 2018] De-initializing SCTP...
+[Thu Feb 22 13:15:55 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:15:55 2018] Closing plugins:
+[Thu Feb 22 13:15:55 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:15:55 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:15:55 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:16:25 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:16:25 2018] ICE handles watchdog started
+[Thu Feb 22 13:16:25 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:16:25 2018] Enabling libnice debugging...
+[Thu Feb 22 13:16:25 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:16:25 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:16:25 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:16:25 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:16:25 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:16:25 2018]   -- RTCP component blackhole socket bound to port 53548
+[Thu Feb 22 13:16:25 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:16:25 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:16:25 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:16:25 2018] Generating DTLS key / cert
+[Thu Feb 22 13:16:26 2018] Fingerprint of our certificate: 55:1E:69:84:7F:C0:33:3C:94:7C:D3:0A:C7:46:76:10:A7:08:1E:A5:96:6C:80:A8:F2:2E:57:35:11:C8:E4:5A
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:16:26 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:16:26 2018] Sessions watchdog started
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:16:26 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:16:26 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:16:45 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:16:45 2018] Closing transport plugins:
+[Thu Feb 22 13:16:45 2018] Destroying sessions...
+[Thu Feb 22 13:16:45 2018] Freeing crypto resources...
+[Thu Feb 22 13:16:45 2018] De-initializing SCTP...
+[Thu Feb 22 13:16:45 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:16:45 2018] Closing plugins:
+[Thu Feb 22 13:16:45 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:16:45 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:16:45 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:22:28 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:22:28 2018] ICE handles watchdog started
+[Thu Feb 22 13:22:28 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:22:28 2018] Enabling libnice debugging...
+[Thu Feb 22 13:22:28 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:22:28 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:22:28 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:22:28 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:22:28 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:22:28 2018]   -- RTCP component blackhole socket bound to port 49998
+[Thu Feb 22 13:22:28 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:22:28 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:22:28 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:22:28 2018] Generating DTLS key / cert
+[Thu Feb 22 13:22:29 2018] Fingerprint of our certificate: 83:EA:55:32:ED:45:BC:5F:FF:35:F5:4F:D8:94:1F:CF:05:F5:4B:41:0D:DF:67:16:F6:D7:C2:B0:CD:7B:BD:78
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:22:29 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:22:29 2018] Sessions watchdog started
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:22:29 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:22:29 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:22:41 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:22:41 2018] Closing transport plugins:
+[Thu Feb 22 13:22:41 2018] Destroying sessions...
+[Thu Feb 22 13:22:41 2018] Freeing crypto resources...
+[Thu Feb 22 13:22:41 2018] De-initializing SCTP...
+[Thu Feb 22 13:22:41 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:22:41 2018] Closing plugins:
+[Thu Feb 22 13:22:41 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:22:41 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:22:41 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:33:16 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:33:16 2018] ICE handles watchdog started
+[Thu Feb 22 13:33:16 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:33:16 2018] Enabling libnice debugging...
+[Thu Feb 22 13:33:16 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:33:16 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:33:16 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:33:16 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:33:16 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:33:16 2018]   -- RTCP component blackhole socket bound to port 34941
+[Thu Feb 22 13:33:16 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:33:16 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:33:16 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:33:16 2018] Generating DTLS key / cert
+[Thu Feb 22 13:33:17 2018] Fingerprint of our certificate: 8E:60:69:3A:68:11:26:E4:B0:E1:61:E2:32:BF:A6:C0:46:19:0E:44:DF:BC:03:5E:73:C5:2B:80:69:8B:36:63
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:33:17 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:33:17 2018] Sessions watchdog started
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:33:17 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:33:17 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:34:18 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:34:18 2018] Closing transport plugins:
+[Thu Feb 22 13:34:18 2018] Destroying sessions...
+[Thu Feb 22 13:34:18 2018] Freeing crypto resources...
+[Thu Feb 22 13:34:18 2018] De-initializing SCTP...
+[Thu Feb 22 13:34:18 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:34:18 2018] Closing plugins:
+[Thu Feb 22 13:34:18 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:34:18 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:34:18 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:39:18 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:39:18 2018] ICE handles watchdog started
+[Thu Feb 22 13:39:18 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:39:18 2018] Enabling libnice debugging...
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:39:18 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:39:18 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:39:18 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:39:18 2018]   -- RTCP component blackhole socket bound to port 52526
+[Thu Feb 22 13:39:18 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:39:18 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:39:18 2018] Generating DTLS key / cert
+[Thu Feb 22 13:39:18 2018] Fingerprint of our certificate: 13:A5:AF:C2:FE:41:14:D6:AC:50:9C:52:43:11:96:2B:F8:07:B4:6A:64:8C:B7:9C:04:97:1F:84:CC:FE:F3:85
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:39:18 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:39:18 2018] Sessions watchdog started
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:39:18 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:39:18 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:39:56 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:39:56 2018] Closing transport plugins:
+[Thu Feb 22 13:39:56 2018] Destroying sessions...
+[Thu Feb 22 13:39:56 2018] Freeing crypto resources...
+[Thu Feb 22 13:39:56 2018] De-initializing SCTP...
+[Thu Feb 22 13:39:56 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:39:56 2018] Closing plugins:
+[Thu Feb 22 13:39:56 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:39:56 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:39:56 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:46:22 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:46:22 2018] ICE handles watchdog started
+[Thu Feb 22 13:46:23 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:46:23 2018] Enabling libnice debugging...
+[Thu Feb 22 13:46:23 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:46:23 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:46:23 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:46:23 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:46:23 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:46:23 2018]   -- RTCP component blackhole socket bound to port 52631
+[Thu Feb 22 13:46:23 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:46:23 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:46:23 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:46:23 2018] Generating DTLS key / cert
+[Thu Feb 22 13:46:24 2018] Fingerprint of our certificate: 42:8A:68:12:2A:5D:A7:D9:BE:68:17:B4:D8:75:6A:09:BE:76:BF:34:84:D1:E0:D9:B9:A2:29:C5:0C:85:A6:A8
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:46:24 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:46:24 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:46:24 2018] Sessions watchdog started
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:46:24 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:46:27 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:46:27 2018] Closing transport plugins:
+[Thu Feb 22 13:46:27 2018] Destroying sessions...
+[Thu Feb 22 13:46:27 2018] Freeing crypto resources...
+[Thu Feb 22 13:46:27 2018] De-initializing SCTP...
+[Thu Feb 22 13:46:27 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:46:27 2018] Closing plugins:
+[Thu Feb 22 13:46:27 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:46:27 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:46:27 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:47:25 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:47:25 2018] ICE handles watchdog started
+[Thu Feb 22 13:47:25 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:47:25 2018] Enabling libnice debugging...
+[Thu Feb 22 13:47:25 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:47:25 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:47:25 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:47:25 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:47:25 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:47:25 2018]   -- RTCP component blackhole socket bound to port 39793
+[Thu Feb 22 13:47:25 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:47:25 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:47:25 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:47:25 2018] Generating DTLS key / cert
+[Thu Feb 22 13:47:26 2018] Fingerprint of our certificate: 3E:A4:C8:58:31:FD:6F:89:E2:D2:70:E6:0C:3C:44:5F:75:94:8C:61:76:D9:DE:BF:05:B0:6B:BE:55:98:AB:6E
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:47:26 2018] Sessions watchdog started
+[Thu Feb 22 13:47:26 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:47:26 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:47:26 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:47:30 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:47:30 2018] Closing transport plugins:
+[Thu Feb 22 13:47:30 2018] Destroying sessions...
+[Thu Feb 22 13:47:30 2018] Freeing crypto resources...
+[Thu Feb 22 13:47:30 2018] De-initializing SCTP...
+[Thu Feb 22 13:47:31 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:47:31 2018] Closing plugins:
+[Thu Feb 22 13:47:31 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:47:31 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:47:31 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:53:31 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:53:31 2018] ICE handles watchdog started
+[Thu Feb 22 13:53:31 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:53:31 2018] Enabling libnice debugging...
+[Thu Feb 22 13:53:31 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:53:31 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:53:31 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:53:31 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:53:31 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:53:31 2018]   -- RTCP component blackhole socket bound to port 44147
+[Thu Feb 22 13:53:31 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:53:31 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:53:31 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:53:31 2018] Generating DTLS key / cert
+[Thu Feb 22 13:53:33 2018] Fingerprint of our certificate: 9A:5F:A3:FF:88:1A:0A:D3:29:8B:F5:E9:CC:2D:0B:5B:C7:74:15:C1:EC:0B:2B:A1:E0:13:B2:19:EA:6B:8E:40
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:53:33 2018] Sessions watchdog started
+[Thu Feb 22 13:53:33 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:53:33 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:53:33 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:53:42 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:53:42 2018] Closing transport plugins:
+[Thu Feb 22 13:53:42 2018] Destroying sessions...
+[Thu Feb 22 13:53:42 2018] Freeing crypto resources...
+[Thu Feb 22 13:53:42 2018] De-initializing SCTP...
+[Thu Feb 22 13:53:42 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:53:42 2018] Closing plugins:
+[Thu Feb 22 13:53:42 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 13:53:42 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:53:42 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:56:09 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:56:09 2018] ICE handles watchdog started
+[Thu Feb 22 13:56:09 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:56:09 2018] Enabling libnice debugging...
+[Thu Feb 22 13:56:09 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:56:09 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:56:09 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:56:09 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:56:09 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:56:09 2018]   -- RTCP component blackhole socket bound to port 35748
+[Thu Feb 22 13:56:09 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:56:09 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:56:09 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:56:09 2018] Generating DTLS key / cert
+[Thu Feb 22 13:56:11 2018] Fingerprint of our certificate: 34:FF:DF:FA:CF:C7:18:61:A6:8A:9C:15:91:ED:CC:0E:1C:9B:88:CE:A7:9A:43:86:62:CE:F1:67:84:9F:AF:A3
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:56:11 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:56:11 2018] Sessions watchdog started
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:56:11 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:56:11 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:56:20 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:56:20 2018] Closing transport plugins:
+[Thu Feb 22 13:56:20 2018] Destroying sessions...
+[Thu Feb 22 13:56:20 2018] Freeing crypto resources...
+[Thu Feb 22 13:56:20 2018] De-initializing SCTP...
+[Thu Feb 22 13:56:20 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:56:20 2018] Closing plugins:
+[Thu Feb 22 13:56:20 2018] PLUGINS:
+[Thu Feb 22 13:56:20 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 13:56:20 2018] PLUGINS_SO:
+[Thu Feb 22 13:56:20 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:57:58 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:57:58 2018] ICE handles watchdog started
+[Thu Feb 22 13:57:58 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:57:58 2018] Enabling libnice debugging...
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:57:58 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:57:58 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:57:58 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:57:58 2018]   -- RTCP component blackhole socket bound to port 52514
+[Thu Feb 22 13:57:58 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:57:58 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:57:58 2018] Generating DTLS key / cert
+[Thu Feb 22 13:57:58 2018] Fingerprint of our certificate: 33:D2:01:72:DE:6C:93:8C:CD:13:78:65:71:5A:7A:F8:BF:DD:D7:19:51:37:7D:6C:88:55:0C:A6:3F:E2:C9:C9
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:57:58 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:57:58 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:57:58 2018] Sessions watchdog started
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:57:58 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:58:00 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:58:00 2018] Closing transport plugins:
+[Thu Feb 22 13:58:00 2018] Destroying sessions...
+[Thu Feb 22 13:58:00 2018] Freeing crypto resources...
+[Thu Feb 22 13:58:00 2018] De-initializing SCTP...
+[Thu Feb 22 13:58:00 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:58:00 2018] Closing plugins:
+[Thu Feb 22 13:58:00 2018] PLUGINS:
+[Thu Feb 22 13:58:00 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 13:58:00 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:58:00 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 13:59:35 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 13:59:35 2018] ICE handles watchdog started
+[Thu Feb 22 13:59:35 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 13:59:35 2018] Enabling libnice debugging...
+[Thu Feb 22 13:59:35 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:59:35 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 13:59:35 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 13:59:35 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 13:59:35 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 13:59:35 2018]   -- RTCP component blackhole socket bound to port 46200
+[Thu Feb 22 13:59:35 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 13:59:35 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 13:59:35 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 13:59:35 2018] Generating DTLS key / cert
+[Thu Feb 22 13:59:38 2018] Fingerprint of our certificate: 06:9E:22:FF:93:6A:8D:9E:A4:7B:E8:BB:40:A2:1E:48:60:80:15:49:26:7B:44:6D:E1:64:3A:A4:5C:F7:FF:39
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 13:59:38 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 13:59:38 2018] Sessions watchdog started
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 13:59:38 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 13:59:38 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 13:59:42 2018] Ending watchdog mainloop...
+[Thu Feb 22 13:59:42 2018] Closing transport plugins:
+[Thu Feb 22 13:59:42 2018] Destroying sessions...
+[Thu Feb 22 13:59:42 2018] Freeing crypto resources...
+[Thu Feb 22 13:59:42 2018] De-initializing SCTP...
+[Thu Feb 22 13:59:42 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 13:59:42 2018] Closing plugins:
+[Thu Feb 22 13:59:42 2018] PLUGINS:
+[Thu Feb 22 13:59:42 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 13:59:42 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 13:59:42 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:01:29 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:01:29 2018] ICE handles watchdog started
+[Thu Feb 22 14:01:29 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:01:29 2018] Enabling libnice debugging...
+[Thu Feb 22 14:01:29 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:01:29 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:01:29 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:01:29 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:01:29 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:01:29 2018]   -- RTCP component blackhole socket bound to port 39909
+[Thu Feb 22 14:01:29 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:01:29 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:01:29 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:01:29 2018] Generating DTLS key / cert
+[Thu Feb 22 14:01:32 2018] Fingerprint of our certificate: D8:B2:69:07:66:B7:5D:C2:C9:17:1E:FE:38:45:32:59:22:82:76:F8:83:6B:B7:B4:2B:FF:E0:B4:36:67:6F:36
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:01:32 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:01:32 2018] Sessions watchdog started
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:01:32 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:01:32 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:01:37 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:01:37 2018] Closing transport plugins:
+[Thu Feb 22 14:01:37 2018] Destroying sessions...
+[Thu Feb 22 14:01:37 2018] Freeing crypto resources...
+[Thu Feb 22 14:01:37 2018] De-initializing SCTP...
+[Thu Feb 22 14:01:37 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:01:37 2018] Closing plugins:
+[Thu Feb 22 14:01:37 2018] PLUGINS:
+[Thu Feb 22 14:01:37 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:01:37 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:01:37 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:09:36 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:09:36 2018] ICE handles watchdog started
+[Thu Feb 22 14:09:36 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:09:36 2018] Enabling libnice debugging...
+[Thu Feb 22 14:09:36 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:09:36 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:09:36 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:09:36 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:09:36 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:09:36 2018]   -- RTCP component blackhole socket bound to port 50620
+[Thu Feb 22 14:09:36 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:09:36 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:09:36 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:09:36 2018] Generating DTLS key / cert
+[Thu Feb 22 14:09:37 2018] Fingerprint of our certificate: 8D:60:EC:48:39:40:A1:58:2E:5B:CD:5B:0B:A7:FD:0A:FF:FF:CE:3E:F6:01:EE:56:0F:8C:77:B6:94:CF:96:81
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:09:37 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:09:37 2018] Sessions watchdog started
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:09:37 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:09:37 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:09:44 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:09:44 2018] Closing transport plugins:
+[Thu Feb 22 14:09:44 2018] Destroying sessions...
+[Thu Feb 22 14:09:44 2018] Freeing crypto resources...
+[Thu Feb 22 14:09:44 2018] De-initializing SCTP...
+[Thu Feb 22 14:09:44 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:09:44 2018] Closing plugins:
+[Thu Feb 22 14:09:44 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 14:09:44 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:09:44 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:13:03 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:13:03 2018] ICE handles watchdog started
+[Thu Feb 22 14:13:03 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:13:03 2018] Enabling libnice debugging...
+[Thu Feb 22 14:13:03 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:13:03 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:13:03 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:13:03 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:13:03 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:13:03 2018]   -- RTCP component blackhole socket bound to port 52301
+[Thu Feb 22 14:13:03 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:13:03 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:13:03 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:13:03 2018] Generating DTLS key / cert
+[Thu Feb 22 14:13:05 2018] Fingerprint of our certificate: 0E:3F:D2:BD:7C:E8:89:2B:2E:3A:40:A7:2F:66:5E:B3:71:40:2D:31:A4:C0:E1:21:E2:F8:67:E2:CC:D3:6F:B7
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:13:05 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:13:05 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:13:05 2018] Sessions watchdog started
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:13:05 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:13:34 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:13:34 2018] Closing transport plugins:
+[Thu Feb 22 14:13:34 2018] Destroying sessions...
+[Thu Feb 22 14:13:34 2018] Freeing crypto resources...
+[Thu Feb 22 14:13:34 2018] De-initializing SCTP...
+[Thu Feb 22 14:13:34 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:13:34 2018] Closing plugins:
+[Thu Feb 22 14:13:34 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 14:13:34 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:13:34 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:13:43 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:13:43 2018] ICE handles watchdog started
+[Thu Feb 22 14:13:43 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:13:43 2018] Enabling libnice debugging...
+[Thu Feb 22 14:13:43 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:13:43 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:13:43 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:13:43 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:13:43 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:13:43 2018]   -- RTCP component blackhole socket bound to port 57863
+[Thu Feb 22 14:13:43 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:13:43 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:13:43 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:13:43 2018] Generating DTLS key / cert
+[Thu Feb 22 14:13:44 2018] Fingerprint of our certificate: 45:90:98:E4:BB:31:1A:4C:9D:E0:BB:D9:B8:EF:41:5E:A7:9A:DE:BA:AB:92:D4:34:69:31:C9:EE:89:B6:40:63
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:13:44 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:13:44 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:13:44 2018] Sessions watchdog started
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:13:44 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:13:52 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:13:52 2018] Closing transport plugins:
+[Thu Feb 22 14:13:52 2018] Destroying sessions...
+[Thu Feb 22 14:13:52 2018] Freeing crypto resources...
+[Thu Feb 22 14:13:52 2018] De-initializing SCTP...
+[Thu Feb 22 14:13:52 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:13:52 2018] Closing plugins:
+[Thu Feb 22 14:13:52 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 14:13:52 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:13:52 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:19:22 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:19:22 2018] ICE handles watchdog started
+[Thu Feb 22 14:19:22 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:19:22 2018] Enabling libnice debugging...
+[Thu Feb 22 14:19:22 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:19:22 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:19:22 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:19:22 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:19:22 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:19:22 2018]   -- RTCP component blackhole socket bound to port 59896
+[Thu Feb 22 14:19:22 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:19:22 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:19:22 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:19:22 2018] Generating DTLS key / cert
+[Thu Feb 22 14:19:25 2018] Fingerprint of our certificate: 21:31:ED:7B:29:3E:C4:A7:01:56:43:E4:54:FA:35:3E:04:1D:D8:B9:B8:D9:CE:AF:7C:86:54:C1:17:E5:96:A4
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:19:25 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:19:25 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:19:25 2018] Sessions watchdog started
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:19:25 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:19:31 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:19:31 2018] Closing transport plugins:
+[Thu Feb 22 14:19:31 2018] Destroying sessions...
+[Thu Feb 22 14:19:31 2018] Freeing crypto resources...
+[Thu Feb 22 14:19:31 2018] De-initializing SCTP...
+[Thu Feb 22 14:19:31 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:19:31 2018] Closing plugins:
+[Thu Feb 22 14:19:31 2018] PLUGINS:
+[Thu Feb 22 14:19:31 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:19:31 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:19:31 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:37:42 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:37:42 2018] ICE handles watchdog started
+[Thu Feb 22 14:37:42 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:37:42 2018] Enabling libnice debugging...
+[Thu Feb 22 14:37:42 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:37:42 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:37:42 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:37:42 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:37:42 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:37:42 2018]   -- RTCP component blackhole socket bound to port 36246
+[Thu Feb 22 14:37:42 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:37:42 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:37:42 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:37:42 2018] Generating DTLS key / cert
+[Thu Feb 22 14:37:44 2018] Fingerprint of our certificate: 25:2B:60:74:BF:0D:6F:A4:06:F0:33:3E:D3:D6:74:7D:98:DA:D0:F6:ED:CF:24:00:C1:4F:F9:2D:E9:A9:84:D9
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:37:44 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:37:44 2018] Sessions watchdog started
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:37:44 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:37:44 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:37:54 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:37:54 2018] Closing transport plugins:
+[Thu Feb 22 14:37:54 2018] Destroying sessions...
+[Thu Feb 22 14:37:54 2018] Freeing crypto resources...
+[Thu Feb 22 14:37:54 2018] De-initializing SCTP...
+[Thu Feb 22 14:37:54 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:37:54 2018] Closing plugins:
+[Thu Feb 22 14:37:54 2018] PLUGINS:
+[Thu Feb 22 14:37:54 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:37:54 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:37:54 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:39:25 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:39:25 2018] ICE handles watchdog started
+[Thu Feb 22 14:39:25 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:39:25 2018] Enabling libnice debugging...
+[Thu Feb 22 14:39:25 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:39:25 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:39:25 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:39:25 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:39:25 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:39:25 2018]   -- RTCP component blackhole socket bound to port 44144
+[Thu Feb 22 14:39:25 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:39:25 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:39:25 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:39:25 2018] Generating DTLS key / cert
+[Thu Feb 22 14:39:29 2018] Fingerprint of our certificate: 5A:8F:FE:76:4F:51:D4:02:98:FE:3F:1B:32:8C:FD:4D:63:66:8C:BB:E2:B9:B6:48:1B:2C:F3:8A:1E:29:76:C6
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:39:29 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:39:29 2018] Sessions watchdog started
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:39:29 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:39:29 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:39:32 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:39:32 2018] Closing transport plugins:
+[Thu Feb 22 14:39:32 2018] Destroying sessions...
+[Thu Feb 22 14:39:32 2018] Freeing crypto resources...
+[Thu Feb 22 14:39:32 2018] De-initializing SCTP...
+[Thu Feb 22 14:39:32 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:39:32 2018] Closing plugins:
+[Thu Feb 22 14:39:32 2018] PLUGINS NOT NULL, DELETENG NOW!!!!!!!!!!!!!!!!
+[Thu Feb 22 14:39:32 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:39:32 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:39:32 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:40:55 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:40:55 2018] ICE handles watchdog started
+[Thu Feb 22 14:40:55 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:40:55 2018] Enabling libnice debugging...
+[Thu Feb 22 14:40:55 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:40:55 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:40:55 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:40:55 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:40:55 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:40:55 2018]   -- RTCP component blackhole socket bound to port 52048
+[Thu Feb 22 14:40:55 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:40:55 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:40:55 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:40:55 2018] Generating DTLS key / cert
+[Thu Feb 22 14:40:59 2018] Fingerprint of our certificate: 37:6E:4B:07:50:13:65:EE:C5:4F:13:0F:C0:AB:38:8C:CA:7E:B0:65:08:1C:73:35:EA:64:AB:E3:D6:AE:A0:C0
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m NEW FUCKER
+[Thu Feb 22 14:40:59 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:40:59 2018] Sessions watchdog started
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:40:59 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:40:59 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:41:02 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:41:02 2018] Closing transport plugins:
+[Thu Feb 22 14:41:02 2018] Destroying sessions...
+[Thu Feb 22 14:41:02 2018] Freeing crypto resources...
+[Thu Feb 22 14:41:02 2018] De-initializing SCTP...
+[Thu Feb 22 14:41:02 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:41:02 2018] Closing plugins:
+[Thu Feb 22 14:41:02 2018] [33m[WARN][0m PLUGINS NOT NULL, DELETENG NOW!!!!!!!!!!!!!!!!
+[Thu Feb 22 14:41:03 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:41:03 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:41:03 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:53:25 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:53:25 2018] ICE handles watchdog started
+[Thu Feb 22 14:53:25 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:53:25 2018] Enabling libnice debugging...
+[Thu Feb 22 14:53:25 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:53:25 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:53:25 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:53:25 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:53:25 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:53:25 2018]   -- RTCP component blackhole socket bound to port 50975
+[Thu Feb 22 14:53:25 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:53:25 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:53:25 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:53:25 2018] Generating DTLS key / cert
+[Thu Feb 22 14:53:27 2018] Fingerprint of our certificate: 89:BF:4D:80:B7:73:AB:C6:A4:90:B8:7A:5B:E3:38:E0:FD:B9:FA:94:91:DA:C5:18:86:40:12:48:B0:FE:7A:FF
+[Thu Feb 22 14:53:27 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:53:27 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:53:27 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:53:27 2018] Sessions watchdog started
+[Thu Feb 22 14:53:27 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:53:27 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:53:27 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:53:27 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:53:30 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:53:30 2018] Closing transport plugins:
+[Thu Feb 22 14:53:30 2018] Destroying sessions...
+[Thu Feb 22 14:53:30 2018] Freeing crypto resources...
+[Thu Feb 22 14:53:30 2018] De-initializing SCTP...
+[Thu Feb 22 14:53:30 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:53:30 2018] Closing plugins.
+[Thu Feb 22 14:53:30 2018] Closing plugins: PLUGINS IS NULL
+[Thu Feb 22 14:53:30 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:53:30 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 14:55:49 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 14:55:49 2018] ICE handles watchdog started
+[Thu Feb 22 14:55:49 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 14:55:49 2018] Enabling libnice debugging...
+[Thu Feb 22 14:55:49 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:55:49 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 14:55:49 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 14:55:49 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 14:55:49 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 14:55:49 2018]   -- RTCP component blackhole socket bound to port 34562
+[Thu Feb 22 14:55:49 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 14:55:49 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 14:55:49 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 14:55:49 2018] Generating DTLS key / cert
+[Thu Feb 22 14:55:51 2018] Fingerprint of our certificate: 67:C4:3B:65:62:31:5D:A2:16:25:C4:4F:AD:62:EC:1F:67:96:6D:CA:21:6C:77:88:12:8F:F3:B9:7D:98:5B:04
+[Thu Feb 22 14:55:51 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 14:55:51 2018] Sessions watchdog started
+[Thu Feb 22 14:55:51 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 14:55:51 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 14:55:51 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 14:55:51 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 14:55:51 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 14:55:51 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 14:56:00 2018] Ending watchdog mainloop...
+[Thu Feb 22 14:56:00 2018] Closing transport plugins:
+[Thu Feb 22 14:56:00 2018] Destroying sessions...
+[Thu Feb 22 14:56:00 2018] Freeing crypto resources...
+[Thu Feb 22 14:56:00 2018] De-initializing SCTP...
+[Thu Feb 22 14:56:00 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 14:56:00 2018] Closing plugins.
+[Thu Feb 22 14:56:00 2018] [33m[WARN][0m PLUGINS NOT NULL, DELETENG NOW!!!!!!!!!!!!!!!!
+[Thu Feb 22 14:56:01 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 14:56:01 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 14:56:01 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 15:06:01 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 15:06:01 2018] ICE handles watchdog started
+[Thu Feb 22 15:06:01 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 15:06:01 2018] Enabling libnice debugging...
+[Thu Feb 22 15:06:01 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 15:06:01 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 15:06:01 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 15:06:01 2018] [31m[ERR][0m [b.c:main:227] Invalid address (null)..?
+[Thu Feb 22 15:06:01 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 15:06:01 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 15:06:01 2018]   -- RTCP component blackhole socket bound to port 53831
+[Thu Feb 22 15:06:01 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 15:06:01 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 15:06:01 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 15:06:01 2018] Generating DTLS key / cert
+[Thu Feb 22 15:06:03 2018] Fingerprint of our certificate: 97:5A:76:80:EE:1A:C3:14:6D:F3:64:CE:FA:F2:81:BC:B1:DB:45:8E:F0:35:94:8E:01:6A:5D:AE:EC:79:E9:5A
+[Thu Feb 22 15:06:03 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 15:06:03 2018] Sessions watchdog started
+[Thu Feb 22 15:06:03 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 15:06:03 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 15:06:03 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 15:06:03 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 15:06:03 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 15:06:03 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 15:08:25 2018] Ending watchdog mainloop...
+[Thu Feb 22 15:08:25 2018] Closing transport plugins:
+[Thu Feb 22 15:08:25 2018] Destroying sessions...
+[Thu Feb 22 15:08:25 2018] Freeing crypto resources...
+[Thu Feb 22 15:08:25 2018] De-initializing SCTP...
+[Thu Feb 22 15:08:25 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 15:08:25 2018] Closing plugins.
+[Thu Feb 22 15:08:25 2018] [33m[WARN][0m PLUGINS NOT NULL, DELETENG NOW!!!!!!!!!!!!!!!!
+[Thu Feb 22 15:08:25 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 15:08:25 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 15:08:25 2018] Closing event handlers:
+Bye!
+---------------------------------------------------
+---------------------------------------------------
+
+[Thu Feb 22 15:09:35 2018] Initializing ICE stuff (Full mode, ICE-TCP candidates disabled, IPv6 support disabled)
+[Thu Feb 22 15:09:35 2018] ICE handles watchdog started
+[Thu Feb 22 15:09:36 2018] TURN REST API backend: (disabled)
+[Thu Feb 22 15:09:36 2018] Enabling libnice debugging...
+[Thu Feb 22 15:09:36 2018] [33m[WARN][0m No NICE_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 15:09:36 2018] [33m[WARN][0m No G_MESSAGES_DEBUG environment variable set, setting maximum debug
+[Thu Feb 22 15:09:36 2018] Debugging NICE_DEBUG=all G_MESSAGES_DEBUG=all
+[Thu Feb 22 15:09:36 2018] BUNDLE is NOT going to be forced
+[Thu Feb 22 15:09:36 2018] rtcp-mux is NOT going to be forced
+[Thu Feb 22 15:09:36 2018]   -- RTCP component blackhole socket bound to port 40856
+[Thu Feb 22 15:09:36 2018] Using certificates:
+	(null)
+	(null)
+[Thu Feb 22 15:09:36 2018] Crypto: OpenSSL pre-1.1.0
+[Thu Feb 22 15:09:36 2018] [33m[WARN][0m No cert/key specified, autogenerating some...
+[Thu Feb 22 15:09:36 2018] Generating DTLS key / cert
+[Thu Feb 22 15:09:37 2018] Fingerprint of our certificate: 8E:F2:28:39:68:61:07:AC:B1:41:1E:77:66:FD:79:31:DC:5D:E0:39:A7:D0:3B:D2:67:30:01:64:46:93:66:F6
+[Thu Feb 22 15:09:37 2018] Plugins folder: /home/globik/webrtc
+[Thu Feb 22 15:09:37 2018] [33m[WARN][0m LOADING PLUGIN libjanus_echtest.so
+[Thu Feb 22 15:09:37 2018] Sessions watchdog started
+[Thu Feb 22 15:09:37 2018] Loading plugin 'libjanus_echtest.so'...
+[Thu Feb 22 15:09:37 2018] [33m[WARN][0m 	Version: 7 (0.0.7)
+[Thu Feb 22 15:09:37 2018] [33m[WARN][0m 	   [janus.plugin.echotest] JANUS EchoTest plugin
+[Thu Feb 22 15:09:37 2018] [33m[WARN][0m 	   This is a trivial EchoTest plugin for Janus, just used to showcase the plugin interface.
+[Thu Feb 22 15:09:37 2018] [33m[WARN][0m 	   Plugin API version: 8
+Stopping gateway, please wait...
+[Thu Feb 22 15:10:10 2018] Ending watchdog mainloop...
+[Thu Feb 22 15:10:10 2018] Closing transport plugins:
+[Thu Feb 22 15:10:10 2018] Destroying sessions...
+[Thu Feb 22 15:10:10 2018] Freeing crypto resources...
+[Thu Feb 22 15:10:10 2018] De-initializing SCTP...
+[Thu Feb 22 15:10:10 2018] Ending ICE handles watchdog mainloop...
+[Thu Feb 22 15:10:10 2018] Closing plugins.
+[Thu Feb 22 15:10:10 2018] [33m[WARN][0m PLUGINS NOT NULL, DELETENG NOW!!!!!!!!!!!!!!!!
+[Thu Feb 22 15:10:11 2018] JANUS EchoTest plugin destroyed!
+[Thu Feb 22 15:10:11 2018] Closing plugins: PLUGINS_SO IS NULL
+[Thu Feb 22 15:10:11 2018] Closing event handlers:
+Bye!

@@ -290,7 +290,7 @@ static void *janus_echotest_watchdog(void *data) {
 		janus_mutex_unlock(&sessions_mutex);
 		g_usleep(500000);
 	}
-	g_print("echotest watchdog stopped\n");
+	g_print(red "echotest watchdog stopped\n" rt);
 	g_print(gr "EchoTest watchdog stopped\n" rt);
 	return NULL;
 }
@@ -379,8 +379,8 @@ void janus_echotest_destroy(void) {
 
 	g_atomic_int_set(&initialized, 0);
 	g_atomic_int_set(&stopping, 0);
-	g_print("destroyed echo plug\n");
-	//JANUS_LOG(LOG_INFO, "%s destroyed!\n", JANUS_ECHOTEST_NAME);
+	g_print(red "destroyed echo plug\n" rt);
+	JANUS_LOG(LOG_INFO, "%s destroyed!\n", JANUS_ECHOTEST_NAME);
 }
 
 int janus_echotest_get_api_compatibility(void) {
