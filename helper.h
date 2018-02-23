@@ -34,7 +34,7 @@ static GHashTable *old_sessions, *sessions;
 static uint session_timeout;
 static GMainContext *sessions_watchdog_context;
 //static
-	gchar *local_ip;
+extern	gchar *local_ip;
 static gchar *public_ip;
 
 //static
@@ -97,7 +97,7 @@ static janus_callbacks janus_handler_plugin =
 		.events_is_enabled = janus_events_is_enabled,
 		.notify_event = janus_plugin_notify_event,
 	}; 
-void select_local_ip(gchar*);
+gchar*select_local_ip();
 
 
 

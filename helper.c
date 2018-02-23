@@ -456,16 +456,17 @@ g_hash_table_insert(pl, (gpointer)janus_plugin->get_package(), janus_plugin);
 			}
 }
 			
-void select_local_ip(gchar*loc_ip){
+gchar * select_local_ip(){
 	
-	if(loc_ip == NULL) {
-		loc_ip = janus_network_detect_local_ip_as_string(janus_network_query_options_any_ip);
-		local_ip=loc_ip;
-		if(loc_ip == NULL) {
+	if(local_ip == NULL) {
+		local_ip = janus_network_detect_local_ip_as_string(janus_network_query_options_any_ip);
+		
+		if(local_ip == NULL) {
 			g_print("Couldn't find any address! using 127.0.0.1 as the local IP... (which is NOT going to work out of your machine)\n");
-			loc_ip = g_strdup("127.0.0.1");
-			local_ip=loc_ip;
-		}
+			local_ip = g_strdup("127.0.0.1");
+			//local_ip=loc_ip;
+			return local_ip;
+		}else{return local_ip;}
 	}
 }
 

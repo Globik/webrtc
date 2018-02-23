@@ -70,6 +70,7 @@ static size_t json_format = JSON_INDENT(3) | JSON_PRESERVE_ORDER;
 static janus_mutex sessions_mutex;
 static GHashTable *sessions = NULL, *old_sessions = NULL;
 static GMainContext *sessions_watchdog_context = NULL;
+#define CONFDIR "/usr/local/etc/janus"
 gint main(int argc, char *argv[])
 {
 	janus_log_level=7;
@@ -91,7 +92,82 @@ gboolean use_stdout = TRUE;
 	signal(SIGTERM, janus_handle_signal);
 	atexit(janus_termination_handler);
 
-	g_print(" Setup Glib \n");
+	g_print("configs \n");
+	
+	configs_folder = g_strdup (CONFDIR);
+	g_print("configs_folder %s\n",configs_folder);
+	if(config_file == NULL) {
+		char file[255];
+		g_snprintf(file, 255, "%s/janus.cfg", configs_folder);
+		config_file = g_strdup(file);
+	}
+	if((config = janus_config_parse(config_file)) == NULL) {
+		
+		g_print("Error reading/parsing the configuration file, going on with the defaults and the command line arguments\n");
+		config = janus_config_create("janus.cfg");
+		if(config == NULL) {
+			//If we can't even create an empty configuration, something's definitely wrong 
+			exit(1);
+		}
+	}
+	janus_config_item *item = janus_config_get_item_drilldown(config, "nat", "ice_enforce_list");
+	if(item && item->value) {
+		gchar **list = g_strsplit(item->value, ",", -1);
+		gchar *index = list[0];
+		if(index != NULL) {
+			int i=0;
+			while(index != NULL) {
+				if(strlen(index) > 0) {
+					JANUS_LOG(LOG_INFO, "Adding '%s' to the ICE enforce list...\n", index);
+					janus_ice_enforce_interface(g_strdup(index));
+				}
+				i++;
+				index = list[i];
+			}
+		}
+		g_clear_pointer(&list, g_strfreev);
+	}
+	
+	item = janus_config_get_item_drilldown(config, "nat", "ice_ignore_list");
+	if(item && item->value) {
+		gchar **list = g_strsplit(item->value, ",", -1);
+		gchar *index = list[0];
+		if(index != NULL) {
+			int i=0;
+			while(index != NULL) {
+				if(strlen(index) > 0) {
+					JANUS_LOG(LOG_INFO, "Adding '%s' to the ICE ignore list...\n", index);
+					janus_ice_ignore_interface(g_strdup(index));
+				}
+				i++;
+				index = list[i];
+			}
+		}
+		g_clear_pointer(&list, g_strfreev);
+	}
+	
+	item = janus_config_get_item_drilldown(config, "general", "interface");
+	if(item && item->value) {
+		JANUS_LOG(LOG_VERB, "  -- Will try to use %s\n", item->value);
+		/* Verify that the address is valid */
+		struct ifaddrs *ifas = NULL;
+		janus_network_address iface;
+		janus_network_address_string_buffer ibuf;
+		if(getifaddrs(&ifas) || ifas == NULL) {
+			JANUS_LOG(LOG_ERR, "Unable to acquire list of network devices/interfaces; some configurations may not work as expected...\n");
+		} else {
+			if(janus_network_lookup_interface(ifas, item->value, &iface) != 0) {
+				JANUS_LOG(LOG_WARN, "Error setting local IP address to %s, falling back to detecting IP address...\n", item->value);
+			} else {
+				if(janus_network_address_to_string_buffer(&iface, &ibuf) != 0 || janus_network_address_string_buffer_is_null(&ibuf)) {
+					JANUS_LOG(LOG_WARN, "Error getting local IP address from %s, falling back to detecting IP address...\n", item->value);
+				} else {
+					local_ip = g_strdup(janus_network_address_string_from_buffer(&ibuf));
+				}
+			}
+		}
+	}
+	
 	
 #if !GLIB_CHECK_VERSION(2, 36, 0)
 	g_type_init();
@@ -101,7 +177,22 @@ gboolean use_stdout = TRUE;
 	
 	// What is the local IP? 
 	g_print("Selecting local IP address...\n");
-	select_local_ip(local_ip);
+	//select_local_ip(local_ip);
+	if(local_ip==NULL)local_ip=select_local_ip();
+	
+	item = janus_config_get_item_drilldown(config, "general", "session_timeout");
+	if(item && item->value) {
+		int st = atoi(item->value);
+		if(st < 0) {
+			JANUS_LOG(LOG_WARN, "Ignoring session_timeout value as it's not a positive integer\n");
+		} else {
+			if(st == 0) {
+				JANUS_LOG(LOG_WARN, "Session timeouts have been disabled (note, may result in orphaned sessions)\n");
+			}
+			session_timeout = st;
+		}
+	}
+	
 	/*
 	if(local_ip == NULL) {
 		local_ip = janus_network_detect_local_ip_as_string(janus_network_query_options_any_ip);
@@ -130,7 +221,8 @@ gboolean use_stdout = TRUE;
 	gboolean ice_lite = FALSE, ice_tcp = FALSE, ipv6 = FALSE;
 	//item = janus_config_get_item_drilldown(config, "media", "ipv6");
 	ipv6 = /*(item && item->value) ? janus_is_true(item->value) : */FALSE;
-	janus_config_item*item = janus_config_get_item_drilldown(config, "media", "rtp_port_range");
+	//janus_config_item*
+		item = janus_config_get_item_drilldown(config, "media", "rtp_port_range");
 	
 	g_printf(" Check if we need to enable the ICE Lite mode \n");
 	//item = janus_config_get_item_drilldown(config, "nat", "ice_lite");
