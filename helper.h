@@ -12,6 +12,7 @@
 #include "utils.h" //janus_pidfile_remove
 #include "config.h"
 #include "janus.h"
+#include "version.h"
 #include "events.h"
 #include "apierror.h"
 #include "log.h"
@@ -22,6 +23,17 @@
 #else
 #define SHLIB_EXT ".so"
 #endif
+
+#define JANUS_NAME				"Janus WebRTC Gateway"
+#define JANUS_AUTHOR			"Meetecho s.r.l."
+#define JANUS_VERSION			25
+#define JANUS_VERSION_STRING	"0.2.5"
+#define JANUS_SERVER_NAME		"MyJanusInstance"
+
+#define DEFAULT_SESSION_TIMEOUT		60
+
+#define CONFDIR "/home/globik/webrtc/configs"
+
 
 //#include "log.h"
 extern  gint stop_signal;
@@ -42,13 +54,19 @@ static gchar *public_ip;
 static GHashTable *plugins_so;
 
 const char *path;
-static janus_config *config;
-janus_config_item*item;
+extern janus_config *config;
+//extern 
+	janus_config_item*item;
+gboolean force_bundle;
+gboolean force_rtcpmux;
+
+
 DIR *dir;
 struct dirent *pluginent;
 gchar **disabled_plugins;
 static char *config_file;
-static char *configs_folder;
+//static 
+	char *configs_folder;
 //static janus_callbacks janus_handler_plugin;
 
 int janus_log_level;
@@ -98,8 +116,53 @@ static janus_callbacks janus_handler_plugin =
 		.notify_event = janus_plugin_notify_event,
 	}; 
 gchar*select_local_ip();
+void conf_max_nack_queue();
+void conf_force_bundle_or_and_rtcp_mux();
+void conf_no_media_timer();
+const char*conf_cert_pem();
+const char*conf_cert_key();
+void conf_dtls_mtu();
 
+	char*stun_server;
+	char*turn_server;
+	const char *nat_1_1_mapping;
+void test_private_address();
+void conf_nice_debug();
 
+uint16_t stun_port;
+uint16_t turn_port;
+char *turn_type;
+char*turn_user;
+char*turn_pwd;
+char *turn_rest_api;
+char*turn_rest_api_key;
+#ifdef HAVE_LIBCURL
+char *turn_rest_api_method;
+#endif
+uint16_t rtp_min_port;
+uint16_t rtp_max_port;
+gboolean ice_lite;
+gboolean ice_tcp;
+gboolean ipv6;
+
+void conf_turn();
+void conf_session_timeout();
+void conf_interface();
+void conf_ice_ignore_list();
+void conf_ice_enforce_list();
+void stop_signal_hook();
+gboolean use_stdout;
+void puzomerka(gboolean);
+
+void set_conf_file(char*);
+void fuck_up();
+
+GHashTable *transports;
+GHashTable *transports_so;
+GHashTable *eventhandlers;
+GHashTable *eventhandlers_so;
+
+char *api_secret, *admin_api_secret;
 
 
 
