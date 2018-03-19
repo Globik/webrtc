@@ -17,7 +17,7 @@ No technical education from my side, no expiriencing in programming languages. I
 
 It's will be good for a small projects. I ain't saying about over 1Mio users of project. I'm saying about 100 users. 
 It's enough to start to make money.
-It's C. It's fast enough and not so monstruose ans slowly like existent node.js  parts webrtc solutions(based on native webrtc and family).
+It's C. It's fast enough and not so monstruose and slowly like existent node.js  parts webrtc solutions(based on native webrtc and family).
 
 # What I removed from janus core
 
