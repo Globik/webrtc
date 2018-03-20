@@ -1,12 +1,79 @@
-//#include <stdlib.h> //exit
-//#include <kore/kore.h>
+
 #include "helper.h"
+#include "debug.h"
+#include "apierror.h"
 char *config_file = NULL;
 char *configs_folder=NULL;
+gboolean daemonize = FALSE;
+int pipefd[2];
 gboolean full_trickle;
+gchar *local_ip = NULL;
+static gchar *public_ip;
+const char*path=NULL;
+janus_config *config = NULL;
 
+static GMainContext *sessions_watchdog_context = NULL;
+static GHashTable *sessions = NULL, *old_sessions = NULL;
+
+static GHashTable *eventhandlers = NULL;
+static GHashTable *eventhandlers_so = NULL;
+
+static GHashTable *plugins = NULL;
+static GHashTable *plugins_so = NULL;
+
+
+static uint session_timeout = DEFAULT_SESSION_TIMEOUT;
+int janus_log_level = LOG_INFO;
+gboolean janus_log_timestamps = FALSE;
+gboolean janus_log_colors = FALSE;
+int lock_debug = 0;
+static gint initialized = 0, stopping = 0;
+static janus_transport_callbacks *gateway = NULL;
+//static gboolean ws_janus_api_enabled = FALSE;
+//static gboolean ws_admin_api_enabled = FALSE;
+static gboolean notify_events = TRUE;
+static size_t json_format = JSON_INDENT(3) | JSON_PRESERVE_ORDER;
+
+gchar **disabled_plugins;
+
+char*stun_server;
+char*turn_server;
+const char *nat_1_1_mapping;
+
+uint16_t stun_port;
+uint16_t turn_port;
+char *turn_type;
+char*turn_user;
+char*turn_pwd;
+char *turn_rest_api;
+char*turn_rest_api_key;
+#ifdef HAVE_LIBCURL
+char *turn_rest_api_method;
+#endif
+uint16_t rtp_min_port;
+uint16_t rtp_max_port;
+gboolean ice_lite;
+gboolean ice_tcp;
+gboolean ipv6;
+DIR *dir;
+struct dirent *pluginent;
+janus_config_item*item;
+char *api_secret = NULL, *admin_api_secret = NULL;
+
+
+
+
+
+
+static gboolean janus_check_sessions(gpointer);
 //static 
-	void janus_handle_signal(int signum) {
+	void janus_session_schedule_destruction(janus_session *,gboolean, gboolean, gboolean);
+
+
+
+
+//here we go
+static void janus_handle_signal(int signum) {
 	stop_signal = signum;
 	switch(g_atomic_int_get(&stop)) {
 		case 0:
@@ -24,8 +91,7 @@ gboolean full_trickle;
 		exit(1);
 }
 
-//static
-	void janus_termination_handler(void) {
+static void janus_termination_handler(void) {
 	//Free the instance name, if provided 
 	g_free(server_name);
 	// Remove the PID file if we created it 
@@ -46,8 +112,7 @@ gint janus_is_stopping(void) {
 	return g_atomic_int_get(&stop);
 }
 
-//static 
-	gboolean janus_cleanup_session(gpointer user_data) {
+static gboolean janus_cleanup_session(gpointer user_data) {
 	janus_session *session = (janus_session *) user_data;
 
 	JANUS_LOG(LOG_INFO, "Cleaning up session %"SCNu64"...\n", session->session_id);
@@ -514,8 +579,8 @@ if(!plugin_session || plugin_session < (janus_plugin_session *)0x1000 || !janus_
 	const char *sdp = json_string_value(json_object_get(jsep, "sdp"));
 	gboolean restart=json_object_get(jsep,"sdp") ? json_is_true(json_object_get(jsep,"restart")) : FALSE;
 	json_t *merged_jsep = NULL;
-	if(sdp_type != NULL && sdp != NULL) {
-		merged_jsep = janus_plugin_handle_sdp(plugin_session, plugin, sdp_type, sdp,restart);
+if(sdp_type != NULL && sdp != NULL) {
+merged_jsep = janus_plugin_handle_sdp(plugin_session, plugin, sdp_type, sdp,restart);
 		if(merged_jsep == NULL) {
 			if(ice_handle == NULL || janus_flags_is_set(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_STOP)
 					|| janus_flags_is_set(&ice_handle->webrtc_flags, JANUS_ICE_HANDLE_WEBRTC_ALERT)) {
