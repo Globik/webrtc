@@ -1,4 +1,5 @@
 # ar -cvq libdima.a  ILibWebRTC.o
+# don't forget to exclude janus-janus.o file from janus-gateway directory!
 OBJ=/home/globik/janus-gateway/*.o /home/globik/janus-gateway/plugins/janus-plugin.o
 LI=-L/home/globik/boringssl/build/crypto -Wl,-rpath /home/globik/boringssl/build/crypto -lcrypto -L/home/globik/boringssl/build/ssl -Wl,-rpath /home/globik/boringssl/build/ssl -lssl
 PL=-lusrsctp -rdynamic

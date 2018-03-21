@@ -13,7 +13,7 @@ I got it. Russia, Chelyabinsk-city, 19.03.2018.
 
 One more time I'm saying: a standalone webrtc gateway server is good, but a relatively "small" gateway library is even better.
 Theoretically Janus's code could one to add to any good web framework. Today I've proofed it.
-No technical education from my side, no expiriencing in programming languages. I just did it and here you are!
+ I just did it and here you are!
 
 It's will be good for a small projects. I ain't saying about over 1Mio users of project. I'm saying about 100 users. 
 It's enough to start to make money.
